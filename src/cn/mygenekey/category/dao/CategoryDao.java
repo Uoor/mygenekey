@@ -8,7 +8,7 @@ import cn.mygenekey.category.vo.Category;
 
 /**
  * 一级分类的持久层对象
- * @author 传智.郭嘉
+ *  
  *
  */
 public class CategoryDao extends HibernateDaoSupport{

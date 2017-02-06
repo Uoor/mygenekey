@@ -16,10 +16,16 @@
 		<property name="addr"/>
 		<property name="state"/>
 		<property name="code"/>
+		<property name="barCode" column="bar_code"/>
 		
 		<set name="orders" cascade="delete">
 			<key column="uid"/>
 			<one-to-many class="cn.mygenekey.order.vo.Order"/>
+		</set>
+
+		<set name="salivaBoxs" cascade="delete">
+			<key column="uid"/>
+			<one-to-many class="cn.mygenekey.salivaBox.vo.SalivaBox"/>
 		</set>
 	</class>
 </hibernate-mapping>

@@ -4,7 +4,7 @@ import cn.mygenekey.product.vo.Product;
 
 /**
  * 购物项对象
- * @author 传智.郭嘉
+ *  
  *
  */
 public class CartItem {

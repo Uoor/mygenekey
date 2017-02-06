@@ -13,7 +13,7 @@ import cn.mygenekey.utils.UUIDUtils;
 
 /**
  * 用户名模块业务层代码
- * @author 传智.郭嘉
+ *  
  *
  */
 @Transactional

@@ -4,7 +4,7 @@ import cn.mygenekey.product.vo.Product;
 
 /**
  * 订单项的实体
- * @author 传智.郭嘉
+ *  
  *
  */
 public class OrderItem {
@@ -15,6 +15,8 @@ public class OrderItem {
 	private Product product;
 	// 订单外键:对象
 	private Order order;
+	private String barCode;
+
 	public Integer getItemid() {
 		return itemid;
 	}
@@ -45,5 +47,12 @@ public class OrderItem {
 	public void setOrder(Order order) {
 		this.order = order;
 	}
-	
+
+	public String getBarCode() {
+		return barCode;
+	}
+
+	public void setBarCode(String barCode) {
+		this.barCode = barCode;
+	}
 }

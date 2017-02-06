@@ -9,7 +9,7 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 /**
  * 后台用户管理的Action类
- * @author 传智.郭嘉
+ *  
  *
  */
 public class UserAdminAction extends ActionSupport implements ModelDriven<User>{
@@ -22,7 +22,7 @@ public class UserAdminAction extends ActionSupport implements ModelDriven<User>{
 	
 	// 注入用户的Service
 	private UserService userService;
-	
+
 	public void setUserService(UserService userService) {
 		this.userService = userService;
 	}

@@ -2,7 +2,8 @@
 SQLyog 企业版 - MySQL GUI v8.14 
 MySQL - 5.5.40 : Database - mygenekey
 *********************************************************************
-*/
+*/
+
 
 /*!40101 SET NAMES utf8 */;
 
@@ -40,9 +41,10 @@ CREATE TABLE `barcode` (
   `bar_code` varchar(50) DEFAULT NULL COMMENT '要确定好格式',
   `status` int(11) DEFAULT '0' COMMENT '0 未激活;1 已激活 ',
   `uid` int(11) DEFAULT NULL COMMENT '关联使用用户',
+`sbid` int(11) DEFAULT NULL COMMENT '唾液盒编号',
+	
   PRIMARY KEY (`bcid`),
-  KEY `FK_user-barcode` (`uid`),
-  CONSTRAINT `FK_user-barcode` FOREIGN KEY (`uid`) REFERENCES `user` (`uid`)
+  
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 CHECKSUM=1 DELAY_KEY_WRITE=1 ROW_FORMAT=DYNAMIC;
 
 /*Data for the table `barcode` */
@@ -100,13 +102,11 @@ CREATE TABLE `orderitem` (
   `subtotal` double DEFAULT NULL,
   `pid` int(11) DEFAULT NULL,
   `oid` int(11) DEFAULT NULL,
-  `bcid` int(11) DEFAULT NULL COMMENT '生产订单时，生成一个条形码',
+  `bar_code` varchar(50) DEFAULT NULL COMMENT '要确定好格式',
   PRIMARY KEY (`itemid`),
   KEY `FKE8B2AB6166C01961` (`oid`),
   KEY `FKE8B2AB6171DB7AE4` (`pid`),
   KEY `FKE8B2AB6140ACF87A` (`oid`),
-  KEY `FK_barcode_orderitem` (`bcid`),
-  CONSTRAINT `FK_barcode_orderitem` FOREIGN KEY (`bcid`) REFERENCES `barcode` (`bcid`),
   CONSTRAINT `FKE8B2AB6140ACF87A` FOREIGN KEY (`oid`) REFERENCES `orders` (`oid`),
   CONSTRAINT `FKE8B2AB6171DB7AE4` FOREIGN KEY (`pid`) REFERENCES `product` (`pid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
@@ -174,14 +174,12 @@ DROP TABLE IF EXISTS `salivabox`;
 CREATE TABLE `salivabox` (
   `sbid` int(11) NOT NULL AUTO_INCREMENT,
   `sex` varchar(20) DEFAULT NULL COMMENT '性别',
-  `bcid` int(11) DEFAULT NULL COMMENT '条形码',
+   `bar_code` varchar(50) DEFAULT NULL COMMENT '要确定好格式',
   `birthday` datetime DEFAULT NULL COMMENT '出生日期',
   `dna_accredit` int(11) DEFAULT '0' COMMENT '0 不允许 1允许',
   `uid` int(11) DEFAULT NULL COMMENT '使用的用户',
   PRIMARY KEY (`sbid`),
   KEY `FK_user_salivabox` (`uid`),
-  KEY `FK_barcode_salivabox` (`bcid`),
-  CONSTRAINT `FK_barcode_salivabox` FOREIGN KEY (`bcid`) REFERENCES `barcode` (`bcid`),
   CONSTRAINT `FK_user_salivabox` FOREIGN KEY (`uid`) REFERENCES `user` (`uid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 CHECKSUM=1 DELAY_KEY_WRITE=1 ROW_FORMAT=DYNAMIC;
 
@@ -201,6 +199,7 @@ CREATE TABLE `user` (
   `addr` varchar(255) DEFAULT NULL,
   `state` int(11) DEFAULT NULL,
   `code` varchar(64) DEFAULT NULL,
+`bar_code` varchar(50) DEFAULT NULL COMMENT '要确定好格式',
   PRIMARY KEY (`uid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 

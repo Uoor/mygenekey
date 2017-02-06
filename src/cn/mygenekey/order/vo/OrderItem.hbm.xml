@@ -10,6 +10,7 @@
 		
 		<property name="count"/>
 		<property name="subtotal"/>
+		<property name="barCode" column="bar_code"/>
 		
 		<many-to-one name="product" lazy="false" class="cn.mygenekey.product.vo.Product" column="pid"></many-to-one>
 		

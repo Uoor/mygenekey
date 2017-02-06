@@ -8,7 +8,7 @@ import cn.mygenekey.product.vo.Product;
 
 /**
  * 二级分类的实体
- * @author 传智.郭嘉
+ *  
  *
  */
 public class CategorySecond {

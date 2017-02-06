@@ -11,7 +11,7 @@ import cn.mygenekey.utils.PageBean;
 /**
  * 商品的业务层代码
  * 
- * @author 传智.郭嘉
+ *  
  * 
  */
 @Transactional

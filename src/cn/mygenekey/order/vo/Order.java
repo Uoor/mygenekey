@@ -4,11 +4,12 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
+import cn.mygenekey.logisticCompany.vo.LogisticsCompany;
 import cn.mygenekey.user.vo.User;
 
 /**
  * 订单实体
- * @author 传智.郭嘉
+ * @author
  *CREATE TABLE `orders` (
   `oid` int(11) NOT NULL AUTO_INCREMENT,
   `total` double DEFAULT NULL,
@@ -31,10 +32,107 @@ public class Order {
 	private String name;
 	private String phone;
 	private String addr;
+	private Date acceptTime;
+	private Date refuseTIme;
+	private Date endTime;
+	private Date supplyTime;
+	private Integer balance;// 0:未付款 1:已付款
+	private Integer paymentType;//1：微信支付  2：支付宝支付 3：网银支付
+	private String accountNumber;
+	private Date backTime;
+
+	private String waybillNumber;
+	//物流公司的外键
+	private LogisticsCompany logisticsCompany;
+
+
 	// 用户的外键:对象
 	private User user;
 	// 配置订单项的集合
 	private Set<OrderItem> orderItems = new HashSet<OrderItem>();
+
+	public Date getAcceptTime() {
+		return acceptTime;
+	}
+
+	public Date getBackTime() {
+		return backTime;
+	}
+
+	public void setBackTime(Date backTime) {
+		this.backTime = backTime;
+	}
+
+	public void setAcceptTime(Date acceptTime) {
+		this.acceptTime = acceptTime;
+
+	}
+
+	public Date getRefuseTIme() {
+		return refuseTIme;
+	}
+
+	public void setRefuseTIme(Date refuseTIme) {
+		this.refuseTIme = refuseTIme;
+	}
+
+	public Date getEndTime() {
+		return endTime;
+	}
+
+	public void setEndTime(Date endTime) {
+		this.endTime = endTime;
+	}
+
+	public Date getSupplyTime() {
+		return supplyTime;
+	}
+
+	public void setSupplyTime(Date supplyTime) {
+		this.supplyTime = supplyTime;
+	}
+
+	public Integer getBalance() {
+		return balance;
+	}
+
+	public void setBalance(Integer balance) {
+		this.balance = balance;
+	}
+
+	public Integer getPaymentType() {
+		return paymentType;
+	}
+
+	public void setPaymentType(Integer paymentType) {
+		this.paymentType = paymentType;
+	}
+
+	public String getAccountNumber() {
+		return accountNumber;
+	}
+
+	public void setAccountNumber(String accountNumber) {
+		this.accountNumber = accountNumber;
+	}
+
+	public String getWaybillNumber() {
+		return waybillNumber;
+	}
+
+	public void setWaybillNumber(String waybillNumber) {
+		this.waybillNumber = waybillNumber;
+	}
+
+	public LogisticsCompany getLogisticsCompany() {
+		return logisticsCompany;
+	}
+
+	public void setLogisticsCompany(LogisticsCompany logisticsCompany) {
+		this.logisticsCompany = logisticsCompany;
+	}
+
+
 	
 	public Integer getOid() {
 		return oid;

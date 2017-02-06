@@ -4,10 +4,11 @@ import java.util.HashSet;
 import java.util.Set;
 
 import cn.mygenekey.order.vo.Order;
+import cn.mygenekey.salivaBox.vo.SalivaBox;
 
 /**
  * 用户名模块实体类:
- * @author 传智.郭嘉
+ * @author
  *CREATE TABLE `user` (
   `uid` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(255) DEFAULT NULL,
@@ -27,12 +28,19 @@ public class User {
 	private String password;
 	private String name;
 	private String email;
+
+
 	private String phone;
 	private String addr;
 	private Integer state;
 	private String code;
+	private String barCode;
+
 	// 一个用户对应多个订单:
 	private Set<Order> orders = new HashSet<Order>();
+	// 一个用户对应多个唾液盒:
+	private Set<SalivaBox> salivaBoxs = new HashSet<SalivaBox>();
+
 	public Integer getUid() {
 		return uid;
 	}
@@ -92,6 +100,21 @@ public class User {
 	}
 	public void setOrders(Set<Order> orders) {
 		this.orders = orders;
+	}
+	public String getBarCode() {
+		return barCode;
+	}
+
+	public void setBarCode(String barCode) {
+		this.barCode = barCode;
+	}
+
+	public Set<SalivaBox> getSalivaBoxs() {
+		return salivaBoxs;
+	}
+
+	public void setSalivaBoxs(Set<SalivaBox> salivaBoxs) {
+		this.salivaBoxs = salivaBoxs;
 	}
 	
 }

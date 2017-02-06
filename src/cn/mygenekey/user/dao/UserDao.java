@@ -10,7 +10,7 @@ import cn.mygenekey.utils.PageHibernateCallback;
 /**
  * 用户模块持久层代码:
  * 
- * @author 传智.郭嘉
+ *  
  * 
  */
 public class UserDao extends HibernateDaoSupport {

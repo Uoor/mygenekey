@@ -6,7 +6,7 @@ import cn.mygenekey.categorysecond.vo.CategorySecond;
 
 /**
  * 商品的实体对象
- * @author 传智.郭嘉
+ * @author
  *
  */
 public class Product {

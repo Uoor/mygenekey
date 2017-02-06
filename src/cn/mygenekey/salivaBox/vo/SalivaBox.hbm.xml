@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="cn.mygenekey.salivaBox.vo.SalivaBox" table="salivaBox">
+		<id name="sbid">
+			<generator class="native"/>
+		</id>
+	
+		<property name="sex" column="sex"/>
+		<property name="barCode" column="bar_code"/>
+		<property name="birthday" column="birthday"/>
+		<property name="dnaAccredit" column="dna_accredit"/>
+		
+		<!-- 配置用户的集合 多对一-->
+		<many-to-one name="user" lazy="false" class="cn.mygenekey.user.vo.User" column="uid"/>
+		
+	</class>
+</hibernate-mapping>

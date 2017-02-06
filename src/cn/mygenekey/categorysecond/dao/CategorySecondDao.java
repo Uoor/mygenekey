@@ -10,7 +10,7 @@ import cn.mygenekey.utils.PageHibernateCallback;
 /**
  * 二级分类的Dao层的代码
  * 
- * @author 传智.郭嘉
+ *  
  * 
  */
 public class CategorySecondDao extends HibernateDaoSupport {

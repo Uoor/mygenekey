@@ -11,13 +11,16 @@ import cn.mygenekey.user.vo.User;
 
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 
 /**
  * 用户模块Action的类
  * 
- * @author 传智.郭嘉
+ *  
  * 
  */
+@Controller
 public class UserAction extends ActionSupport implements ModelDriven<User> {
 	// 模型驱动使用的对象
 	private User user = new User();
@@ -32,11 +35,12 @@ public class UserAction extends ActionSupport implements ModelDriven<User> {
 		this.checkcode = checkcode;
 	}
 	// 注入UserService
+	@Autowired
 	private UserService userService;
-
+/*
 	public void setUserService(UserService userService) {
 		this.userService = userService;
-	}
+	}*/
 
 	/**
 	 * 跳转到注册页面的执行方法
