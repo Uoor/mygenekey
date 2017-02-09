@@ -12,6 +12,7 @@ import cn.mygenekey.user.vo.User;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 /**
@@ -21,6 +22,7 @@ import org.springframework.stereotype.Controller;
  * 
  */
 @Controller
+@Scope("prototype")
 public class UserAction extends ActionSupport implements ModelDriven<User> {
 	// 模型驱动使用的对象
 	private User user = new User();
@@ -40,8 +42,8 @@ public class UserAction extends ActionSupport implements ModelDriven<User> {
 /*
 	public void setUserService(UserService userService) {
 		this.userService = userService;
-	}*/
-
+	}
+*/
 	/**
 	 * 跳转到注册页面的执行方法
 	 */
@@ -75,6 +77,23 @@ public class UserAction extends ActionSupport implements ModelDriven<User> {
 	 * 用户注册的方法:
 	 */
 	public String regist() {
+		// 判断验证码程序:
+		// 从session中获得验证码的随机值:
+		String checkcode1 = (String) ServletActionContext.getRequest()
+				.getSession().getAttribute("checkcode");
+		if(!checkcode.equalsIgnoreCase(checkcode1)){
+			this.addActionError("验证码输入错误!");
+			return "checkcodeFail";
+		}
+		userService.save(user);
+		this.addActionMessage("注册成功!请去邮箱激活!");
+		return "msg";
+	}
+
+	/**
+	 * 用户注册的方法:
+	 */
+	public String registByPhone() {
 		// 判断验证码程序:
 		// 从session中获得验证码的随机值:
 		String checkcode1 = (String) ServletActionContext.getRequest()

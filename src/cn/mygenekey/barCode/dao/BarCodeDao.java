@@ -1,19 +1,38 @@
 package cn.mygenekey.barCode.dao;
 
+import cn.mygenekey.barCode.vo.BarCode;
+import cn.mygenekey.base.BaseDaoImpl;
 import cn.mygenekey.user.vo.User;
 import cn.mygenekey.utils.PageHibernateCallback;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
 import java.util.List;
+import org.junit.Test;
+import org.springframework.stereotype.Repository;
 
 /**
- * 用户模块持久层代码:
+ * 条形码 模块持久层代码:
  * 
  *  
  * 
  */
-public class UserDao extends HibernateDaoSupport {
+@Repository
+public class BarCodeDao extends BaseDaoImpl<BarCode> {
 
+
+	// 按barCode（可能是 时间戳）查询是否有该用户:
+	public BarCode findByBarCode(String timeStamp) {
+		String hql = "from BarCode where barCode = ?";
+		List<BarCode> list = this.getHibernateTemplate().find(hql, timeStamp);
+		if (list != null && list.size() > 0) {
+			return list.get(0);
+		}
+		return null;
+	}
+
+	//根据时间戳获取器主键
+
+	//--------------------------------
 	// 按名次查询是否有该用户:
 	public User findByUsername(String username) {
 		String hql = "from User where username = ?";
@@ -24,10 +43,7 @@ public class UserDao extends HibernateDaoSupport {
 		return null;
 	}
 
-	// 注册用户存入数据库代码实现
-	public void save(User user) {
-		this.getHibernateTemplate().save(user);
-	}
+
 
 	// 根据激活码查询用户
 	public User findByCode(String code) {
@@ -39,10 +55,6 @@ public class UserDao extends HibernateDaoSupport {
 		return null;
 	}
 
-	// 修改用户状态的方法
-	public void update(User existUser) {
-		this.getHibernateTemplate().update(existUser);
-	}
 
 	// 用户登录的方法
 	public User login(User user) {
@@ -55,10 +67,14 @@ public class UserDao extends HibernateDaoSupport {
 		return null;
 	}
 
+
+
 	public int findCount() {
-		String hql = "select count(*) from User";
+		System.out.println("hi junit");
+		String hql = "select count(*) from barcode ";
 		List<Long> list = this.getHibernateTemplate().find(hql);
 		if (list != null && list.size() > 0) {
+			System.out.println(list.get(0).intValue());
 			return list.get(0).intValue();
 		}
 		return 0;
@@ -75,7 +91,5 @@ public class UserDao extends HibernateDaoSupport {
 		return this.getHibernateTemplate().get(User.class, uid);
 	}
 
-	public void delete(User existUser) {
-		this.getHibernateTemplate().delete(existUser);
-	}
+
 }

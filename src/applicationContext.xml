@@ -58,6 +58,11 @@
 		</property>
 	</bean>
 
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
 	<!-- 事务管理: -->
 	<!-- 事务管理器 -->
 	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
@@ -163,6 +168,9 @@
 	</bean>
 
 	<!-- Dao的配置  ===========================-->
+
+
+
 	<bean id="userDao" class="cn.mygenekey.user.dao.UserDao">
 		<property name="sessionFactory" ref="sessionFactory"/>
 	</bean>
