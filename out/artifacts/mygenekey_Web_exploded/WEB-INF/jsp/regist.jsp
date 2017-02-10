@@ -236,11 +236,34 @@
 			</div>
 		</div>
 	</div>
+
 <div class="container footer">
 	<div class="span24">
 		<div class="footerAd">
 					<img src="${pageContext.request.contextPath}/image/footer.jpg" width="950" height="52" alt="我们的优势" title="我们的优势">
 </div>	</div>
+
+
+
+
+	<form  action="action="${ pageContext.request.contextPath }/user_mobileRegister.action" onsubmit="return allok()"
+		   method="post" class="form form--stack J-wwwtracker-form" >
+		<div id="choose-edit" style="margin-bottom: 50px;text-align: center;">
+			<div class="control-group input-top" style="margin-top:50px">
+				<input type="text" id="login-mobile" class="login-in-input" name="phone" value="" placeholder="请输入手机号"/>
+			</div>
+			<div class="control-group">
+				<input type="text" name="dynamicCode" id="login-verify-code"  autocomplete="off" value="" placeholder="请输入动态码" class="login-in-input login-phone-input">
+				<input type="button" id="sendBtnInput" value="发送动态码" class="send login_phone_num" onclick="sendFunction()"/>
+			</div>
+			<div class="control-group">
+				<input type="submit" class="btn b2 login-now" style="background-color: #33ccff" value="登录"/>
+			</div>
+			<div style="margin-top:20px"><a href="${ctx }/customer/toIndex" class="forget-password">返回密码登陆</a></div>
+		</div>
+	</form>
+
+
 	<div class="span24">
 		<ul class="bottomNav">
 					<li>
@@ -285,4 +308,119 @@
 		<div class="copyright">Copyright © 2005-2015 网上商城 版权所有</div>
 	</div>
 </div>
-<div id="_my97DP" style="position: absolute; top: -1970px; left: -1970px;"><iframe style="width: 190px; height: 191px;" src="./会员注册 - Powered By Mango Team_files/My97DatePicker.htm" frameborder="0" border="0" scrolling="no"></iframe></div></body></html>
+<div id="_my97DP" style="position: absolute; top: -1970px; left: -1970px;"><iframe style="width: 190px; height: 191px;" src="./会员注册 - Powered By Mango Team_files/My97DatePicker.htm" frameborder="0" border="0" scrolling="no"></iframe></div>
+</body>
+
+<script>
+    var email;  //登录用户名
+    var password;  //登录密码
+    var mobile;   //phone number
+    var verify;  //动态码
+    var remember; //记住密码
+    var reg=/^0{0,1}(13[0-9]|15[7-9]|153|156|18[0-9])[0-9]{8}$/;
+
+    var InterValObj; //timer变量，控制时间
+    var count = 60; //间隔函数，1秒执行
+    var curCount;//当前剩余秒数
+
+
+    function getmobile(){
+        mobile = $("#login-mobile").val();
+        verify=$("#login-verify-code").val();
+    }
+
+    //timer处理函数
+    function SetRemainTime() {
+        if (curCount == 0) {
+            window.clearInterval(InterValObj);//停止计时器
+            $(".send").removeAttr("disabled");//启用按钮
+            $(".send").val("重新发送验证码");
+        }
+        else {
+            curCount--;
+            $(".send").val("重新发送（" + curCount + "）秒");
+        }
+    }
+
+
+    function sendMessage() {
+
+        curCount = count;
+        //设置button效果，开始计时
+        $(".send").attr("disabled", "true");
+        $(".send").val("重新发送（" + curCount + "）秒");
+        InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次
+        var phone = $("#login-mobile").val();
+        $.ajax({
+            type: "POST", //用POST方式传输
+            dataType: "text", //数据格式:JSON
+            url: 'user_sendVerification', //目标地址
+            data: "phone=" + phone/* +"&uid=" + uid + "&code=" + code*/,
+            error: function (XMLHttpRequest, textStatus, errorThrown) { },
+            success: function (msg){
+                if(msg!="【ok】"){
+                    //do something
+                }
+            }
+        });
+    }
+
+
+    function testmobile(){
+
+        getmobile();
+        if(mobile==""||mobile==null){
+            swal("手机号不能为空");
+			/*  $(".validate-info").css("display","block");
+			 $(".validate-info").html("手机号不能为空"); */
+            $("#login-mobile").focus();
+
+            return false;
+        }
+        if(mobile.length!=11){
+            swal("手机号必须为11位");
+			/*  $(".validate-info").css("display","block");
+			 $(".validate-info").html("手机号必须为11位"); */
+            $("#login-mobile").focus();
+            return false;
+        }
+        if(!reg.test(mobile)){
+            swal("请输入正确的手机号码");
+			/*    $(".validate-info").css("display","block");
+			 $(".validate-info").html("请输入正确的手机号码"); */
+            $("#login-mobile").focus();
+            return false;
+        }
+		/*  else if(verify==""||verify==null){
+		 $(".validate-info").css("display","block");
+		 $(".validate-info").html("动态码不能为空");
+		 $("#login-verify-code").focus();
+		 return false;
+		 } */
+        return true;
+        //$("#J-login-form").submit();
+    }
+    function allok(){
+        testmobile();
+        if(verify==""||verify==null){
+            swal("动态码不能为空");
+			/*   $(".validate-info").css("display","block");
+			 $(".validate-info").html("动态码不能为空"); */
+            $("#login-verify-code").focus();
+            return false;
+        }
+        //验证成功执行发送动作
+		/*    sendMessage(); */
+        //$("#J-login-form").submit();
+        return true;
+    }
+    function sendFunction(){
+        if(testmobile()){
+            sendMessage();     //如果手机号符合要求，发送验证码
+        }
+	}
+
+
+</script>
+
+</html>

@@ -1,15 +1,13 @@
-package cn.mygenekey.user.service;
+package test.user.service;
 
-import java.util.List;
-
-import org.springframework.transaction.annotation.Transactional;
-
-import cn.mygenekey.order.vo.Order;
-import cn.mygenekey.user.dao.UserDao;
-import cn.mygenekey.user.vo.User;
 import cn.mygenekey.utils.MailUitls;
 import cn.mygenekey.utils.PageBean;
 import cn.mygenekey.utils.UUIDUtils;
+import org.springframework.transaction.annotation.Transactional;
+import test.user.dao.UserDao;
+import test.user.vo.User;
+
+import java.util.List;
 
 /**
  * 用户名模块业务层代码
@@ -34,7 +32,12 @@ public class UserService {
 	// 业务层完成用户注册代码:
 	public void save(User user) {
 		// 将数据存入到数据库
+		user.setState(0); // 0:代表用户未激活.  1:代表用户已经激活.
+		String code = UUIDUtils.getUUID()+UUIDUtils.getUUID();
+		user.setCode(code);
 		userDao.save(user);
+		// 发送激活邮件;
+		MailUitls.sendMail(user.getEmail(), code);
 	}
 
 	// 业务层根据激活码查询用户

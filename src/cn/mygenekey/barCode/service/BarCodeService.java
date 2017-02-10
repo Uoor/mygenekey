@@ -27,7 +27,7 @@ public class BarCodeService {
 //当生成订单时，随机生成一个 barCode
 // 业务层完成
 	//TODO barcode加 唯一索引
-public Boolean newRandomBarCode() {
+public BarCode newRandomBarCode() {
 	BarCode tempBarCode = new BarCode();
 	IdWorker idWorker = new IdWorker(0,0);
 	String temp = idWorker.nextId() + "";
@@ -46,10 +46,10 @@ public Boolean newRandomBarCode() {
 		barCodeDao.update(bc);
 		System.out.println("after: " + bc.getBarCode());
 
-		return true;
+		return bc;
 	}
 
-	return false;
+	return null;
 
 
 }

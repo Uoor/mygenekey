@@ -38,14 +38,11 @@ DROP TABLE IF EXISTS `barcode`;
 
 CREATE TABLE `barcode` (
   `bcid` int(11) NOT NULL AUTO_INCREMENT,
-  `bar_code` varchar(50) DEFAULT NULL COMMENT '要确定好格式',
-  `status` int(11) DEFAULT '0' COMMENT '0 未激活;1 已激活 ',
-  `uid` int(11) DEFAULT NULL COMMENT '关联使用用户',
-`sbid` int(11) DEFAULT NULL COMMENT '唾液盒编号',
-	
+  `bar_code` varchar(255) DEFAULT NULL COMMENT '要确定好格式',
+  `status` int(11) DEFAULT '0' COMMENT '0 未激活;1 已激活 ',	
   PRIMARY KEY (`bcid`),
   
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 CHECKSUM=1 DELAY_KEY_WRITE=1 ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 
 /*Data for the table `barcode` */
 

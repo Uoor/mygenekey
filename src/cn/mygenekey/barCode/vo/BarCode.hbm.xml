@@ -10,8 +10,7 @@
 	
 		<property name="barCode" column="bar_code"/>
 		<property name="status" column="status"/>
-		<property name="sbid" column="sbid"/>
-		<property name="uid" column="uid"/>
+
 
 	</class>
 </hibernate-mapping>
