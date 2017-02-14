@@ -2,37 +2,458 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bd30ad4-c1a5-4ec0-acb8-48c0d6bf808c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/mygenekey/base/BaseAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/mygenekey/utils/Const.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/mygenekey/utils/DataUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/mygenekey/utils/JsonValueFormat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/mygenekey/utils/MessageSend.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/mygenekey/utils/ValidateUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/base/BaseActionTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/base/BaseDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/base/BaseDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/user/action/UserActionTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/user/adminaction/UserAdminAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/user/dao/UserDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/user/service/UserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/user/vo/User.hbm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/user/vo/User.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/fonts/bootstrap/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/fonts/bootstrap/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/fonts/bootstrap/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/fonts/bootstrap/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/fonts/icomoon/icomoon.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/fonts/icomoon/icomoon.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/fonts/icomoon/icomoon.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/fonts/themify-icons/themify.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/fonts/themify-icons/themify.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/fonts/themify-icons/themify.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/images/img_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/images/img_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/images/img_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/images/img_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/images/img_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/images/img_6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/images/img_bg_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/images/img_bg_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/images/img_bg_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/images/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/jsp/_login.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/jsp/_regist.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/jsp/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/jsp/register.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/css/animate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/css/flexslider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/css/icomoon.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/css/magnific-popup.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/css/owl.carousel.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/css/owl.theme.default.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/css/style.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/css/themify-icons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/fonts/bootstrap/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/fonts/icomoon/icomoon.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/fonts/themify-icons/themify.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/jquery.countTo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/jquery.easing.1.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/jquery.flexslider-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/jquery.magnific-popup.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/jquery.stellar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/jquery.waypoints.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/magnific-popup-options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/modernizr-2.6.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/owl.carousel.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/js/respond.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/_bootstrap-compass.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/_bootstrap-mincer.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/_bootstrap-sprockets.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_alerts.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_badges.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_breadcrumbs.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_button-groups.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_buttons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_carousel.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_close.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_code.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_component-animations.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_dropdowns.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_forms.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_glyphicons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_grid.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_input-groups.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_jumbotron.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_labels.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_list-group.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_media.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_modals.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_navbar.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_navs.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_normalize.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_pager.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_pagination.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_panels.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_popovers.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_print.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_progress-bars.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_responsive-embed.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_responsive-utilities.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_scaffolding.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_tables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_theme.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_thumbnails.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_tooltip.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_type.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_utilities.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/_wells.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_alerts.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_background-variant.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_border-radius.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_buttons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_center-block.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_clearfix.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_forms.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_gradients.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_grid-framework.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_grid.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_hide-text.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_image.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_labels.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_list-group.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_nav-divider.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_nav-vertical-align.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_opacity.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_pagination.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_panels.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_progress-bar.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_reset-filter.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_reset-text.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_resize.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_responsive-visibility.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_size.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_tab-focus.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_table-row.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_text-emphasis.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_text-overflow.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/bootstrap/mixins/_vendor-prefixes.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/sass/style.scss" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/css/Style1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/css/WdatePicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/css/cart.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/css/common.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/css/datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/css/dtree.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/css/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/css/left.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/css/login.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/css/product.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/css/register.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/css/slider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/059b5245-e3c8-43bf-80fe-700f0e4e68b8-thumbnail.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/0ff130db-0a1b-4b8d-a918-ed9016317009-thumbnail.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/1 .jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/12.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/18.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/4a51167a-89d5-4710-aca2-7c76edc355b8-thumbnail.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/51afeef5-f6cb-4936-abea-315cfca0edc0-thumbnail.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/54890cf9-91b0-40bc-9f68-51462e9c43a8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/750a9ce8-8c19-444d-b8cc-f3e7e786ec5d-thumbnail.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/93b9e55f-cbae-4c3c-b2f7-2636c7369db7-thumbnail.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/adidas.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/beijirong.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/bigPic13867cc1-935a-4a3a-98f9-edf87ddb1c09.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/bigPic372e7faa-3ad0-444d-a89b-a8e9f0d6e929.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/bigPic4ed6edbf-fb3e-49a7-be5e-361b2ce02961.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/bigPic5ab54f67-a479-48fe-a41d-7d34b57036a3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/bigPica5720219-ba48-460a-a084-24d5b314bd03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/bigPica7e5d3dd-5984-4d0f-9851-35cc0987d9b9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/bigPicaa443d05-27b4-4964-958e-c81536f01d04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/bigPicc1e3a29e-17f5-4d9f-a186-b2c5a0b39b88.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/bigPicd0459632-fe4e-4a5d-8373-1a67c9f43ec2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/bigPice7c2e240-4147-4c11-b369-db3765ec3df9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/bigPicee0785e3-68e2-4e23-93ef-68904bc2a3c6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/c.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/cart.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/common.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/dadonggua.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/e.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/eifini.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/f.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/f37ba36a-181b-4161-a88f-f74c9adb485d-thumbnail.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/f5e39c37-94b2-462e-8e58-8bde3c5f1b8c-thumbnail.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/footer.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/g.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/h.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/header.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/hengyuanxiang.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/i.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/index_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/index_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/index_right.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/index_top.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/j.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/jackjones.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/k.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/l.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/lining.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/login.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/m.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/maoren.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/n.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/nike.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/o.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/p.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/product.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/q.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/r___________renleipic_01/15.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/r___________renleipic_01/bigPic139f030b-d68b-41dd-be6d-b94cc568d3c5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/r___________renleipic_01/bigPic19533252-0faa-4e64-8077-6e1908f47739.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/r___________renleipic_01/bigPic1ea8f1c9-8b8e-4262-8ca9-690912434692.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/r___________renleipic_01/bigPic5f3622b8-028a-4e62-a77f-f41a16d715ed.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/r___________renleipic_01/footer.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/r___________renleipic_01/header.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/r___________renleipic_01/logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/r___________renleipic_01/product.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/semir.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/sentubila.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/septwolves.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/sundance.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/vimly.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/image/yishion.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/IconTexto_WebDev_009.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/article.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/cart.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/common.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/dialog_overlay.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/error.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/finalbutton.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/gif53_029.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/i_del.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/i_edit.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/index.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/info.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/loading_bar.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/loading_icon.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/login.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/member.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/message.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/mis_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/mis_05a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/mis_05b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/mis_05c.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/order.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/password.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/product.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/register.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/review.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/shim.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/top_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/top_100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/tree/base.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/tree/cd.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/tree/empty.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/tree/folder.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/tree/folderopen.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/tree/globe.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/tree/imgfolder.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/tree/join.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/tree/joinbottom.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/tree/line.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/tree/minus.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/tree/minusbottom.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/tree/musicfolder.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/tree/nolines_minus.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/tree/nolines_plus.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/tree/page.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/tree/plus.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/tree/plusbottom.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/tree/question.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/images/tree/trash.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/js/dtree.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/js/jquery-1.8.3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/.~lock.需求分析.docx#" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/css/Style1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/css/WdatePicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/css/cart.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/css/common.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/css/datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/css/dtree.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/css/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/css/left.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/css/login.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/css/product.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/css/register.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/css/slider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/059b5245-e3c8-43bf-80fe-700f0e4e68b8-thumbnail.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/0ff130db-0a1b-4b8d-a918-ed9016317009-thumbnail.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/1 .jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/12.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/18.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/4a51167a-89d5-4710-aca2-7c76edc355b8-thumbnail.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/51afeef5-f6cb-4936-abea-315cfca0edc0-thumbnail.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/54890cf9-91b0-40bc-9f68-51462e9c43a8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/750a9ce8-8c19-444d-b8cc-f3e7e786ec5d-thumbnail.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/93b9e55f-cbae-4c3c-b2f7-2636c7369db7-thumbnail.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/adidas.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/beijirong.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/bigPic13867cc1-935a-4a3a-98f9-edf87ddb1c09.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/bigPic372e7faa-3ad0-444d-a89b-a8e9f0d6e929.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/bigPic4ed6edbf-fb3e-49a7-be5e-361b2ce02961.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/bigPic5ab54f67-a479-48fe-a41d-7d34b57036a3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/bigPica5720219-ba48-460a-a084-24d5b314bd03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/bigPica7e5d3dd-5984-4d0f-9851-35cc0987d9b9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/bigPicaa443d05-27b4-4964-958e-c81536f01d04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/bigPicc1e3a29e-17f5-4d9f-a186-b2c5a0b39b88.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/bigPicd0459632-fe4e-4a5d-8373-1a67c9f43ec2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/bigPice7c2e240-4147-4c11-b369-db3765ec3df9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/bigPicee0785e3-68e2-4e23-93ef-68904bc2a3c6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/c.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/cart.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/common.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/dadonggua.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/e.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/eifini.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/f.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/f37ba36a-181b-4161-a88f-f74c9adb485d-thumbnail.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/f5e39c37-94b2-462e-8e58-8bde3c5f1b8c-thumbnail.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/footer.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/g.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/h.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/header.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/hengyuanxiang.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/i.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/index_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/index_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/index_right.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/index_top.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/j.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/jackjones.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/k.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/l.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/lining.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/login.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/m.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/maoren.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/n.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/nike.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/o.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/p.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/product.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/q.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/r___________renleipic_01/15.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/r___________renleipic_01/bigPic139f030b-d68b-41dd-be6d-b94cc568d3c5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/r___________renleipic_01/bigPic19533252-0faa-4e64-8077-6e1908f47739.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/r___________renleipic_01/bigPic1ea8f1c9-8b8e-4262-8ca9-690912434692.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/r___________renleipic_01/bigPic5f3622b8-028a-4e62-a77f-f41a16d715ed.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/r___________renleipic_01/footer.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/r___________renleipic_01/header.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/r___________renleipic_01/logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/r___________renleipic_01/product.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/semir.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/sentubila.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/septwolves.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/sundance.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/vimly.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/image/yishion.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/IconTexto_WebDev_009.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/article.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/cart.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/common.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/dialog_overlay.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/error.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/finalbutton.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/gif53_029.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/i_del.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/i_edit.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/index.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/info.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/loading_bar.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/loading_icon.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/login.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/member.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/message.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/mis_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/mis_05a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/mis_05b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/mis_05c.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/order.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/password.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/product.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/register.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/review.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/shim.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/top_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/top_100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/tree/base.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/tree/cd.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/tree/empty.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/tree/folder.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/tree/folderopen.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/tree/globe.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/tree/imgfolder.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/tree/join.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/tree/joinbottom.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/tree/line.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/tree/minus.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/tree/minusbottom.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/tree/musicfolder.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/tree/nolines_minus.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/tree/nolines_plus.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/tree/page.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/tree/plus.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/tree/plusbottom.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/tree/question.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/images/tree/trash.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/js/dtree.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/js/jquery-1.8.3.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/WEB-INF/classes/cn/mygenekey/barCode/vo/BarCode.class" afterPath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/WEB-INF/classes/cn/mygenekey/barCode/vo/BarCode.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/WEB-INF/classes/cn/mygenekey/user/action/UserAction.class" afterPath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/WEB-INF/classes/cn/mygenekey/user/action/UserAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mygenekey/cn/mygenekey/barCode/vo/BarCode.class" afterPath="$PROJECT_DIR$/out/production/mygenekey/cn/mygenekey/barCode/vo/BarCode.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mygenekey/cn/mygenekey/user/action/UserAction.class" afterPath="$PROJECT_DIR$/out/production/mygenekey/cn/mygenekey/user/action/UserAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mygenekey/cn/mygenekey/user/service/UserService.class" afterPath="$PROJECT_DIR$/out/production/mygenekey/cn/mygenekey/user/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/jsp/login.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/jsp/login.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/jsp/regist.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/jsp/regist.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/css/register.css" afterPath="$PROJECT_DIR$/WebRoot/css/register.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/WEB-INF/classes/cn/mygenekey/barCode/vo/BarCode.hbm.xml" afterPath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/WEB-INF/classes/cn/mygenekey/barCode/vo/BarCode.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/WEB-INF/classes/cn/mygenekey/salivaBox/vo/SalivaBox.hbm.xml" afterPath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/WEB-INF/classes/cn/mygenekey/salivaBox/vo/SalivaBox.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/WEB-INF/classes/struts.xml" afterPath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/WEB-INF/classes/struts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/WEB-INF/jsp/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/WEB-INF/jsp/login.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/WEB-INF/jsp/regist.jsp" afterPath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/WEB-INF/jsp/regist.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/css/register.css" afterPath="$PROJECT_DIR$/out/artifacts/mygenekey_Web_exploded/css/register.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/mygenekey.sql" afterPath="$PROJECT_DIR$/sql/mygenekey.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mygenekey/barCode/service/BarCodeService.java" afterPath="$PROJECT_DIR$/src/cn/mygenekey/barCode/service/BarCodeService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mygenekey/barCode/vo/BarCode.hbm.xml" afterPath="$PROJECT_DIR$/src/cn/mygenekey/barCode/vo/BarCode.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mygenekey/barCode/vo/BarCode.java" afterPath="$PROJECT_DIR$/src/cn/mygenekey/barCode/vo/BarCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mygenekey/salivaBox/vo/SalivaBox.hbm.xml" afterPath="$PROJECT_DIR$/src/cn/mygenekey/salivaBox/vo/SalivaBox.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mygenekey/cn/mygenekey/barCode/vo/BarCode.hbm.xml" afterPath="$PROJECT_DIR$/out/production/mygenekey/cn/mygenekey/barCode/vo/BarCode.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mygenekey/cn/mygenekey/salivaBox/vo/SalivaBox.hbm.xml" afterPath="$PROJECT_DIR$/out/production/mygenekey/cn/mygenekey/salivaBox/vo/SalivaBox.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mygenekey/struts.xml" afterPath="$PROJECT_DIR$/out/production/mygenekey/struts.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mygenekey/user/action/UserAction.java" afterPath="$PROJECT_DIR$/src/cn/mygenekey/user/action/UserAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mygenekey/user/service/UserService.java" afterPath="$PROJECT_DIR$/src/cn/mygenekey/user/service/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/struts.xml" afterPath="$PROJECT_DIR$/src/struts.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,36 +473,46 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="UserAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/user/action/UserAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+            <state relative-caret-position="1770">
+              <caret line="173" column="0" lean-forward="true" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1486688337824" expanded="false" signature="1134:1139" ph=" { " />
-                <marker date="1486688337824" expanded="false" signature="1170:1173" ph=" }" />
+                <marker date="1487046783337" expanded="false" signature="1134:1139" ph=" { " />
+                <marker date="1487046783337" expanded="false" signature="1170:1173" ph=" }" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SalivaBox.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/salivaBox/vo/SalivaBox.java">
+      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/struts.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-60">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="81">
+              <caret line="33" column="47" lean-forward="false" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SalivaBox.hbm.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/salivaBox/vo/SalivaBox.hbm.xml">
+      <file leaf-file-name="ProductAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/product/action/ProductAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+            <state relative-caret-position="165">
+              <caret line="18" column="29" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="18" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoryAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/category/action/CategoryAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -90,11 +521,16 @@
       <file leaf-file-name="BaseAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/base/BaseAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="1">
+              <caret line="33" column="52" lean-forward="true" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5318#5334#0" expanded="true" />
+                <element signature="e#3010#3011#0" expanded="true" />
+                <element signature="e#3045#3046#0" expanded="true" />
+                <element signature="e#7023#7024#0" expanded="true" />
+                <element signature="e#7054#7055#0" expanded="true" />
+                <element signature="e#7116#7117#0" expanded="true" />
+                <element signature="e#7145#7146#0" expanded="true" />
                 <marker date="1486688556900" expanded="false" signature="7180:7185" ph=" { " />
                 <marker date="1486688556900" expanded="false" signature="7201:7204" ph=" }" />
               </folding>
@@ -105,50 +541,48 @@
       <file leaf-file-name="AdminProductAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/product/adminaction/AdminProductAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1395">
+            <state relative-caret-position="-1645">
               <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/product/action/ProductAction.java">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/jsp/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="17" column="42" lean-forward="false" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+            <state relative-caret-position="1209">
+              <caret line="159" column="7" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="159" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BarCodeDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/barCode/dao/BarCodeDao.java">
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/jsp/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BarCode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/barCode/vo/BarCode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="19" column="15" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="19" selection-end-column="15" />
+            <state relative-caret-position="224">
+              <caret line="73" column="92" lean-forward="false" selection-start-line="73" selection-start-column="84" selection-end-line="73" selection-end-column="92" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BarCode.hbm.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/barCode/vo/BarCode.hbm.xml">
+      <file leaf-file-name="regist.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/jsp/regist.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="511">
+              <caret line="57" column="22" lean-forward="true" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_regist.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/jsp/_regist.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="252" column="88" lean-forward="false" selection-start-line="252" selection-start-column="76" selection-end-line="252" selection-end-column="88" />
               <folding />
             </state>
           </provider>
@@ -182,6 +616,8 @@
       <find>checkImg</find>
       <find>$</find>
       <find>sendFunction</find>
+      <find>(String) ServletActionContext</find>
+      <find>login</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -229,12 +665,17 @@
         <option value="$PROJECT_DIR$/src/test/base/BaseActionTest.java" />
         <option value="$PROJECT_DIR$/src/cn/mygenekey/user/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/test/user/action/UserActionTest.java" />
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/jsp/regist.jsp" />
-        <option value="$PROJECT_DIR$/src/cn/mygenekey/user/action/UserAction.java" />
         <option value="$PROJECT_DIR$/src/cn/mygenekey/base/BaseAction.java" />
         <option value="$PROJECT_DIR$/src/cn/mygenekey/barCode/vo/BarCode.java" />
         <option value="$PROJECT_DIR$/src/cn/mygenekey/barCode/vo/BarCode.hbm.xml" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/cn/mygenekey/salivaBox/vo/SalivaBox.hbm.xml" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/jsp/login.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/jsp/_regist.jsp" />
+        <option value="$PROJECT_DIR$/src/cn/mygenekey/order/action/OrderAction.java" />
+        <option value="$PROJECT_DIR$/src/struts.xml" />
+        <option value="$PROJECT_DIR$/src/cn/mygenekey/user/action/UserAction.java" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/jsp/regist.jsp" />
       </list>
     </option>
   </component>
@@ -252,10 +693,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="-4" />
-    <option name="width" value="1301" />
-    <option name="height" value="772" />
+    <option name="x" value="1431" />
+    <option name="y" value="24" />
+    <option name="width" value="1855" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -272,9 +713,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -527,28 +965,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mygenekey" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mygenekey" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mygenekey" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="product" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -598,6 +1014,124 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="product" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mygenekey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mygenekey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mygenekey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="order" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mygenekey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mygenekey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mygenekey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="order" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mygenekey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mygenekey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mygenekey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mygenekey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mygenekey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mygenekey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="category" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mygenekey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mygenekey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mygenekey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="category" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -679,8 +1213,57 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mygenekey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mygenekey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qianduan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="静态页面20170213" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mygenekey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mygenekey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qianduan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mygenekey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mygenekey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -700,10 +1283,11 @@
       <recent name="cn.mygenekey.base" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/WebRoot/WEB-INF/jsp" />
+      <recent name="$PROJECT_DIR$/WebRoot" />
       <recent name="$PROJECT_DIR$/src/test" />
       <recent name="$PROJECT_DIR$/src/test/barCode" />
       <recent name="$PROJECT_DIR$/src/cn/mygenekey/utils" />
-      <recent name="$PROJECT_DIR$/src/cn/mygenekey/barCode/vo" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.mygenekey">
@@ -1079,6 +1663,7 @@
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
       <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -1200,6 +1785,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -1318,7 +1909,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1486273285722</updated>
-      <workItem from="1486273287407" duration="61055000" />
+      <workItem from="1486273287407" duration="64726000" />
+      <workItem from="1486985945280" duration="8188000" />
     </task>
     <servers />
   </component>
@@ -1355,46 +1947,46 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61055000" />
+    <option name="totallyTimeSpent" value="72914000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
-    <editor active="true" />
+    <frame x="1431" y="24" width="1855" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61764705" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61764705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46763754" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20563674" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32662538" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.250774" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3482972" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="65" y="289" width="1301" height="194" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15936255" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22948207" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30340558" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32662538" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26617953" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3482972" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="65" y="289" width="1301" height="194" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1779989" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15936255" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30340558" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1491,7 +2083,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="40" />
+      <option name="time" value="41" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1500,111 +2092,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/utils/JsonValueFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/utils/DataUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="95" column="38" lean-forward="false" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/struts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="40" column="30" lean-forward="false" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/css/register.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="112" column="0" lean-forward="true" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
-          <folding>
-            <marker date="1486621003458" expanded="true" signature="1155:1176" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/barCode/service/BarCodeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/user/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/user/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#596#597#0" expanded="false" />
-            <element signature="e#641#642#0" expanded="false" />
-            <element signature="e#942#943#0" expanded="false" />
-            <element signature="e#994#995#0" expanded="false" />
-            <element signature="e#1793#1794#0" expanded="false" />
-            <element signature="e#1855#1856#0" expanded="false" />
-            <element signature="e#1894#1895#0" expanded="false" />
-            <element signature="e#1946#1947#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/user/vo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/user/action/CheckImgAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/user/action/UserAction-user_regist-validation.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/user/vo/User.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/json-lib-2.3-jdk15.jar!/net/sf/json/util/EnumMorpher.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1612,7 +2103,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="58" column="33" lean-forward="false" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1620,7 +2110,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1628,7 +2117,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1636,7 +2124,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1644,7 +2131,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1652,9 +2138,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="21" column="81" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="21" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1662,15 +2145,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/struts2-core-2.3.15.3.jar!/org/apache/struts2/interceptor/ServletRequestAware.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1678,7 +2152,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1702,7 +2175,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1711,10 +2183,10 @@
         <state relative-caret-position="540">
           <caret line="166" column="28" lean-forward="true" selection-start-line="166" selection-start-column="28" selection-end-line="166" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3341#3357#0" expanded="true" />
-            <element signature="e#3707#3723#0" expanded="true" />
-            <element signature="e#4641#4656#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3341#3357#0" expanded="false" />
+            <element signature="e#3707#3723#0" expanded="false" />
+            <element signature="e#4641#4656#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1723,7 +2195,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1731,7 +2202,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1739,7 +2209,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
           <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1748,7 +2217,7 @@
         <state relative-caret-position="212">
           <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1765,10 +2234,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="51" column="27" lean-forward="false" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
-          <folding>
-            <element signature="e#956#957#0" expanded="true" />
-            <element signature="e#989#990#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1776,9 +2241,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="49" column="72" lean-forward="false" selection-start-line="49" selection-start-column="72" selection-end-line="49" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1822,14 +2284,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/jsp/regist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="914">
-          <caret line="417" column="25" lean-forward="true" selection-start-line="417" selection-start-column="25" selection-end-line="417" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/jsp/productList.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1854,61 +2308,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/jsp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="41" column="49" lean-forward="false" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/user/action/UserAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1486688337824" expanded="false" signature="1134:1139" ph=" { " />
-            <marker date="1486688337824" expanded="false" signature="1170:1173" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/base/BaseAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5318#5334#0" expanded="true" />
-            <marker date="1486688556900" expanded="false" signature="7180:7185" ph=" { " />
-            <marker date="1486688556900" expanded="false" signature="7201:7204" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/product/adminaction/AdminProductAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1395">
-          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/product/action/ProductAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="17" column="42" lean-forward="false" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/barCode/dao/BarCodeDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
+        <state relative-caret-position="165">
           <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1916,7 +2321,7 @@
     <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/barCode/vo/BarCode.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1929,18 +2334,175 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/salivaBox/vo/SalivaBox.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="60">
+          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/salivaBox/vo/SalivaBox.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        <state relative-caret-position="195">
+          <caret line="13" column="60" lean-forward="true" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/salivaBox/vo/SalivaBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/jsp/_login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/jsp/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/jsp/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1209">
+          <caret line="159" column="7" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="159" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/jsp/_regist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="252" column="88" lean-forward="false" selection-start-line="252" selection-start-column="76" selection-end-line="252" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/product/adminaction/AdminProductAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1645">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/struts2-core-2.3.15.3.jar!/org/apache/struts2/interceptor/ServletRequestAware.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/base/BaseAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="33" column="52" lean-forward="true" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3010#3011#0" expanded="true" />
+            <element signature="e#3045#3046#0" expanded="true" />
+            <element signature="e#7023#7024#0" expanded="true" />
+            <element signature="e#7054#7055#0" expanded="true" />
+            <element signature="e#7116#7117#0" expanded="true" />
+            <element signature="e#7145#7146#0" expanded="true" />
+            <marker date="1486688556900" expanded="false" signature="7180:7185" ph=" { " />
+            <marker date="1486688556900" expanded="false" signature="7201:7204" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/struts2-core-2.3.15.3.jar!/org/apache/struts2/interceptor/ServletResponseAware.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/order/action/OrderAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/category/action/CategoryAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/jsp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="73" column="92" lean-forward="false" selection-start-line="73" selection-start-column="84" selection-end-line="73" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="33" column="47" lean-forward="false" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/product/action/ProductAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="18" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mygenekey/user/action/UserAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1770">
+          <caret line="173" column="0" lean-forward="true" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1487046783337" expanded="false" signature="1134:1139" ph=" { " />
+            <marker date="1487046783337" expanded="false" signature="1170:1173" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/jsp/regist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="57" column="22" lean-forward="true" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
           <folding />
         </state>
       </provider>

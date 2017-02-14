@@ -131,7 +131,9 @@ public class UserAction extends BaseAction<User> {
 	 * 登录的方法
 	 */
 	public String login() {
+
 		User existUser = userService.login(user);
+
 		// 判断
 		if (existUser == null) {
 			// 登录失败
@@ -166,23 +168,13 @@ public class UserAction extends BaseAction<User> {
 	public String mobileRegister() throws Exception {
 
 
-		String phone1= getParameter("phone");
-		String dynamic1 = getParameter("dynamicCode");
-		String password1 = getParameter("password");
-		System.out.println("phone1->" + phone1);
-		System.out.println("dynamic1->" + dynamic1);
-
-		String phone = (String) ServletActionContext.getRequest()
-				.getSession().getAttribute("phone");
-		String dynamic = (String) ServletActionContext.getRequest()
-				.getSession().getAttribute("dynamic");
-		String password = (String) ServletActionContext.getRequest()
-				.getSession().getAttribute("password");
+		String phone= getParameter("phone");
+		String dynamic = getParameter("dynamicCode");
+		String password = getParameter("password");
 
 		String verificationCode = (String) getSession().get(
 				"verificationCode");
-		System.out.println("phone2->" + phone);
-		System.out.println("dynamic2->" + dynamic);
+
 		if (ValidateUtils.checkMobileNumber(phone)
 				&& ValidateUtils.checkVerificationCode(dynamic)) {
 
@@ -223,8 +215,7 @@ public class UserAction extends BaseAction<User> {
 	 */
 	//@Action(value = "sendVerification")
 	public void sendVerification() throws Exception {
-		String phone = (String) ServletActionContext.getRequest().getSession().getAttribute("phone");
-		System.out.println("CustomerAction.sendVerification()");
+		String phone = getParameter("phone");
 		// 1.生成验证码
 		String verificationCode = MessageSend.getVerificationCode();
 		System.out.println("verificationCode:" + verificationCode);
@@ -236,7 +227,6 @@ public class UserAction extends BaseAction<User> {
 				session.clear();
 				session.put("verificationCode", verificationCode);
 				writeStringToResponse("【ok】");
-				mobileRegister();
 			}
 		} catch (Exception e) {
 			log.error("发送验证码失败！");
