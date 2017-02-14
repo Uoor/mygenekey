@@ -1,5 +1,5 @@
 *.iml
-!mygenekey.iml
+mygenekey.iml
 /.idea/*
 *.class
 /out/*
