@@ -165,7 +165,7 @@ public class UserAction extends BaseAction<User> {
 	 *
 	 * @return
 	 */
-	public String mobileRegister() throws Exception {
+	public void mobileRegister() throws Exception {
 
 
 		String phone= getParameter("phone");
@@ -192,24 +192,87 @@ public class UserAction extends BaseAction<User> {
 					user.setState(1);
 					userService.save(user);
 
-					getSession().put("user", user);
-					return "loginSuccess";
+					this.addActionMessage("注册成功!请登陆!");
 
 				} else {
-					return "registPage";
+					this.addActionMessage("注册失败!验证码有误!");
 				}
 			} else {
-				return "registPage";
+				this.addActionMessage("注册失败!验证码有误!");
 			}
 		} else {
-			return "toLogin";
+			this.addActionMessage("注册失败!验证码有误!");
 		}
+	}
+
+	/**
+	 * 找回密码 页面
+	 * 要判断 手机号是否已经存在 动作
+	 * @return
+	 */
+		public String findPasswordBackPage() throws Exception {
+			return "findPasswordBackPage";
 	}
 
 
 
+
+		/**
+		 * 找回密码
+		 * 要判断 手机号是否已经存在 动作
+		 * @return
+		 */
+	public String findPasswordBack() throws Exception {
+
+
+		String phone= getParameter("phone");
+		String dynamic = getParameter("dynamicCode");
+
+		String pswdBackCode = (String) getSession().get(
+				"pswdBackCode");
+
+		if (ValidateUtils.checkMobileNumber(phone)
+				&& ValidateUtils.checkVerificationCode(dynamic)) {
+
+			System.out.println("pswdBackCode->" + pswdBackCode);
+			if (pswdBackCode != null) {
+				// 进行短信验证码比较
+				if (pswdBackCode.equals(dynamic)) {
+					// 验证码通过，跳转至主页面
+					//根据用户名找到改用户
+					User findPasswordUser = userService.findByUsername(user.getUsername());
+					getSession().put("findPasswordUser", findPasswordUser);
+
+					return "findPasswordBackNext";
+
+				} else {
+					this.addActionMessage("找回密码失败!");
+					return "findPasswordBackPage";
+				}
+			} else {
+				this.addActionMessage("找回密码失败!");
+				return "findPasswordBackPage";
+			}
+		} else {
+			this.addActionMessage("找回密码失败!");
+			return "findPasswordBackPage";
+		}
+	}
+
+
+	public String findPasswordBackNext() throws Exception {
+
+		String password= getParameter("password");
+		User findPasswordUser = (User)getSession().get("findPasswordUser");
+
+		findPasswordUser.setPassword(password);
+		userService.update(findPasswordUser);
+		return "login";
+
+
+	}
 	/**
-	 * 发送短信验证码
+	 * 注册发送短信验证码
 	 *
 	 * @return
 	 */
@@ -226,6 +289,33 @@ public class UserAction extends BaseAction<User> {
 			if ("OK".equals(result.get("msg"))) {
 				session.clear();
 				session.put("verificationCode", verificationCode);
+				writeStringToResponse("【ok】");
+			}
+		} catch (Exception e) {
+			log.error("发送验证码失败！");
+			e.printStackTrace();
+		}
+
+	}
+
+	/**
+	 * 找回密码发送短信验证码
+	 *
+	 * @return
+	 */
+	//@Action(value = "sendVerification")
+	public void findPswdBack() throws Exception {
+		String phone = getParameter("phone");
+		// 1.生成验证码
+		String pswdBackCode = MessageSend.getVerificationCode();
+		System.out.println("pswdBackCode:" + pswdBackCode);
+		try {
+			JSONObject result = JSONObject
+					.fromObject(MessageSend.findpswdDynamicVerification(
+							pswdBackCode, phone));
+			if ("OK".equals(result.get("msg"))) {
+				//session.clear();
+				session.put("pswdBackCode", pswdBackCode);
 				writeStringToResponse("【ok】");
 			}
 		} catch (Exception e) {

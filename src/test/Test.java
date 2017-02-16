@@ -23,6 +23,7 @@ public class Test {
         barCodeDao.save(b);
        System.out.print("end");
 
+
     }
 
 

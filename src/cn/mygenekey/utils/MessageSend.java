@@ -141,6 +141,18 @@ public class MessageSend {
 		return sendSms(text, mobile);
 	}
 
+	/**
+	 * 找回密码
+	 * @param verificationCode	六位验证码
+	 * @param mobile	电话号码
+	 * @return
+	 * @throws IOException
+	 */
+	public static String findpswdDynamicVerification(String verificationCode, String mobile) throws IOException {
+		String text = "【基因钥匙】"+verificationCode+"（找回密码验证码）。工作人员不会向您索要，请勿向任何人泄露。";
+		return sendSms(text, mobile);
+	}
+
 
 
 	/**
