@@ -12,7 +12,6 @@
 	<meta name="description" content="Free HTML5 Website Template" />
 	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
 	<!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet"> -->
-
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -41,12 +40,15 @@
         var countdown=60;
 
         function settime(obj) {
-
-            if (countdown == 0) {
+			if(countdown == 60){
+				sendmessage();
+				obj.setAttribute("disabled", true);
+				obj.value="重新发送(" + countdown + ")";
+				countdown--;
+			}else if (countdown == 0) {
                 obj.removeAttribute("disabled");
                 obj.value="免费获取验证码";
                 countdown = 60;
-
                 return;
             } else {
                 obj.setAttribute("disabled", true);
@@ -58,9 +60,8 @@
                 ,1000)
         }
 
-        function sendMessage() {
+        function sendmessage() {
             //设置button效果，开始计时
-            settime(obj)
             var phone = $("#login-mobile").val();
             $.ajax({
                 type: "POST", //用POST方式传输
@@ -75,14 +76,9 @@
                 }
             });
         }
-
-
 	</script>
-
-
 </head>
 <body >
-
 <div class="gtco-loader"></div>
 <div >
 	<nav class="gtco-nav" >
