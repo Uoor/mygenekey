@@ -67,7 +67,7 @@
                 type: "POST", //用POST方式传输
                 dataType: "text", //数据格式:JSON
                 url: 'user_sendVerification', //目标地址
-                data: "phone=" + phone/* +"&uid=" + uid + "&code=" + code*/,
+                data: "phone=" + phone,     <!-- /* +"&uid=" + uid + "&code=" + code*/, -->
                 error: function (XMLHttpRequest, textStatus, errorThrown) { },
                 success: function (msg){
                     if(msg!="【ok】"){
@@ -76,6 +76,49 @@
                 }
             });
         }
+
+
+
+        function checkUsername(){
+            // 获得文件框值:
+            var username = document.getElementById("login-mobile").value;
+            // 1.创建异步交互对象
+            var xhr = createXmlHttp();
+            // 2.设置监听
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState == 4){
+                    if(xhr.status == 200){
+                        document.getElementById("span1").innerHTML = xhr.responseText;
+                    }
+                }
+            }
+            // 3.打开连接
+            xhr.open("GET","${pageContext.request.contextPath}/user_findByName.action?time="+new Date().getTime()+"&username="+username,true);
+            // 4.发送
+            xhr.send(null);
+        }
+
+
+        function createXmlHttp(){
+            var xmlHttp;
+            try{ // Firefox, Opera 8.0+, Safari
+                xmlHttp=new XMLHttpRequest();
+            }
+            catch (e){
+                try{// Internet Explorer
+                    xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+                }
+                catch (e){
+                    try{
+                        xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+                    }
+                    catch (e){}
+                }
+            }
+            return xmlHttp;
+        }
+
+
 	</script>
 </head>
 <body >
@@ -108,7 +151,8 @@
 				<form action="${pageContext.request.contextPath }/user_mobileRegister.action"  method="post" novalidate="novalidate" >
 					<div class="form-group ">
 						<label  class="formlabel">手机号</label>
-						<input type ="text" id="login-mobile" class="form-control" name="phone" placeholder="请输入手机号" required="">
+						<input type ="text" id="login-mobile" class="form-control" name="phone" placeholder="请输入手机号" required="" onblur="checkUsername()">
+						<span id="span1"></span><!-- 补充ajax中返回参数-->
 					</div>
 					<div class="clearfix"></div>
 					<div class="form-group ">

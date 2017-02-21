@@ -1,24 +1,18 @@
 package cn.mygenekey.user.action;
 
-import java.io.IOException;
-
-import javax.servlet.http.HttpServletResponse;
-
-import org.apache.struts2.ServletActionContext;
-
+import cn.mygenekey.base.BaseAction;
 import cn.mygenekey.user.service.UserService;
 import cn.mygenekey.user.vo.User;
-import cn.mygenekey.base.BaseAction;
-
-import com.opensymphony.xwork2.ActionSupport;
-import com.opensymphony.xwork2.ModelDriven;
+import cn.mygenekey.utils.MessageSend;
+import cn.mygenekey.utils.ValidateUtils;
+import net.sf.json.JSONObject;
+import org.apache.struts2.ServletActionContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
-import cn.mygenekey.utils.ValidateUtils;
-import cn.mygenekey.utils.DataUtils;
-import cn.mygenekey.utils.MessageSend;
-import net.sf.json.JSONObject;
+
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 /**
  * 用户模块Action的类
@@ -37,6 +31,9 @@ public class UserAction extends BaseAction<User> {
 	}
 	// 接收验证码:
 	private String checkcode;
+
+	//接收注册时的phone参数信息；
+	//private String phone;
 	
 	public void setCheckcode(String checkcode) {
 		this.checkcode = checkcode;
@@ -49,6 +46,11 @@ public class UserAction extends BaseAction<User> {
 		this.userService = userService;
 	}
 */
+//获取注册页面中的phone参数
+//	public void setPhone(String phone) {
+//		this.phone = phone;
+//	}
+
 	/**
 	 * 跳转到注册页面的执行方法
 	 */
@@ -78,6 +80,27 @@ public class UserAction extends BaseAction<User> {
 		return NONE;
 	}
 
+
+	/*
+	AJAX进行异步校验手机号是否存在的的执行方法
+	 */
+	public String findByPhone() throws IOException {
+		// 调用Service进行查询:
+		//user作为模型驱动，后面get的是在传过来页面的参数内容
+		User existUser = userService.findByUserphone(user.getPhone());
+		// 获得response对象,向页面输出:
+		HttpServletResponse response = ServletActionContext.getResponse();
+		response.setContentType("text/html;charset=UTF-8");
+		// 判断
+		if (existUser != null) {
+			// 查询到该用户:用户名已经存在
+			response.getWriter().println("<font color='red'>该手机号已经存在</font>");
+		} else {
+			// 没查询到该用户:用户名可以使用
+			response.getWriter().println("<font color='green'>该手机号可以使用</font>");
+		}
+		return NONE;
+	}
 	/**
 	 * 用户注册的方法:
 	 */
