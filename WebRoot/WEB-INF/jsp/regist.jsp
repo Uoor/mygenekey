@@ -37,6 +37,31 @@
     <script src="${pageContext.request.contextPath}/js/respond.min.js"></script>
     <![endif]-->
     <script type="text/javascript">
+        function checkForm(){
+            var phone = document.getElementById("login-mobile").value;
+            if(phone == null || phone == ''){
+                alert("手机号不能为空!");
+                return false;
+            }
+            // 校验密码:
+            // 获得密码框的值:
+            var password = document.getElementById("password").value;
+            if(password == null || password == ''){
+                alert("密码不能为空!");
+                return false;
+            }
+            // 校验确认密码:
+            var repassword = document.getElementById("repassword").value;
+            if(repassword != password){
+                alert("两次密码输入不一致!");
+                return false;
+            }
+            //检查是否同意法律声明
+            var check=document.getElementById("acc");
+            if(check.checked == "")
+                alert("请阅读法律声明！");
+            return false;
+        }
         var countdown=60;
         function settime(obj) {
             if(countdown == 60){
@@ -139,31 +164,30 @@
         </div>
     </nav>
 
-
     <div class="login-page" >
         <div class="container">
             <div class="login-body" >
                 <h3 class="page-header">注 册</h3>
-                <form action="${pageContext.request.contextPath }/user_mobileRegister.action"  method="post" novalidate="novalidate" >
+                <form action="${pageContext.request.contextPath }/user_mobileRegister.action"  method="post" novalidate="novalidate" onsubmit="return checkForm();">
                     <div class="form-group ">
                         <label  class="formlabel">手机号</label>
-                        <input type ="text" id="login-mobile" class="form-control" name="phone" placeholder="请输入手机号" required="" onblur="checkUsername()">
+                        <input type ="text" id="login-mobile" class="form-control" name="phone" pattern="\d{11}" placeholder="请输入手机号" required="required" onblur="checkUsername()">
                         <span id="span1"></span><!-- 补充ajax中返回参数-->
                     </div>
                     <div class="clearfix"></div>
                     <div class="form-group ">
                         <label  class="formlabel">密码</label>
-                        <input type="password"  class="form-control" name="password" placeholder="请设置密码" required ="">
+                        <input type="password"  class="form-control" name="password" placeholder="请设置密码" required ="required">
                     </div>
                     <div class="clearfix"></div>
                     <div class="form-group ">
                         <label  class="formlabel">确认密码</label>
-                        <input type="password"  class="form-control"name="passwordCheck" placeholder="请重新密码" required ="">
+                        <input type="password"  class="form-control"name="passwordCheck" placeholder="请重新密码" required ="required">
                     </div>
                     <div class="clearfix"></div>
                     <div class="form-group ">
                         <label  class="formlabel">手机验证码</label>
-                        <input type ="text"  name="phoneCode" class="phoneCheck form-control" placeholder="请输入短信验证码" required="">
+                        <input type ="text"  name="phoneCode" class="phoneCheck form-control" placeholder="请输入短信验证码" required="required">
                         <input type="button" class="getphoneCode form-control"  value="发送验证码" onclick="settime(this)" />
                     </div>
                     <div class="clearfix"></div>
@@ -174,7 +198,7 @@
                         <div class="clearfix"></div>
                     </div>
                     <input type="submit" value="注 册">
-                    <h6> 已有账号？<a href="login.html">马上登录</a></h6>
+                    <h6> 已有账号？<a href="${ pageContext.request.contextPath }/user_loginPage.action">马上登录</a></h6>
                     <div class="clearfix"></div>
                 </form>
             </div>
