@@ -37,7 +37,23 @@
 	<!--[if lt IE 9]>
 	<script src="${pageContext.request.contextPath}/js/respond.min.js"></script>
 	<![endif]-->
+<script type="text/javascript">
+	function checkForm(){
+		var phone = document.getElementById("login-mobile").value;
+		if(phone == null || phone == ''){
+			alert("手机号不能为空!");
+			return false;
+		}
+		// 校验密码:
+		// 获得密码框的值:
+		var password = document.getElementById("password").value;
+		if(password == null || password == ''){
+			alert("密码不能为空!");
+			return false;
+		}
+	}
 
+</script>
 </head>
 <body >
 
@@ -68,15 +84,15 @@
 		<div class="container">
 			<div class="login-body" >
 				<h3 class="page-header">登 录</h3>
-				<form action="${ pageContext.request.contextPath }/user_login.action"  method="post" novalidate="novalidate">
+				<form action="${ pageContext.request.contextPath }/user_login.action"  method="post" novalidate="novalidate" onsubmit="return checkForm();" >
 					<div class="form-group ">
 						<label  class="formlabel">手机号</label>
-						<input type ="text" class="form-control"id="username" name="username" placeholder="请输入手机号" required="">
+						<input type ="text" class="form-control" id="username" name="username" placeholder="请输入手机号" required="required">
 					</div>
 					<div class="clearfix"></div>
 					<div class="form-group ">
 						<label  class="formlabel">密码</label>
-						<input type="password"  class="form-control" name="password" placeholder="请设置密码" required ="">
+						<input type="password"  class="form-control" name="password" placeholder="请设置密码" required ="required">
 					</div>
 					<div class="clearfix"></div>
 					<div class="container">
@@ -85,7 +101,7 @@
 							<a href="#" class="forgot">忘记密码？</a></label>
 						<div class="clearfix"></div>
 					</div>
-					<input type="submit" value="登 录">
+					<input type="submit" value="登 录" >
 					<h6> 未注册用户？<a href="register.html">立即注册</a></h6>
 				</form>
 			</div>

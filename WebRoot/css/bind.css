@@ -1,0 +1,84 @@
+.bind-page{
+  text-align:center;
+}
+.bind-body {
+  padding: 3em;
+  background-color: #fff;
+  -webkit-box-shadow:0px 0px 4px 1px rgb(189, 189, 189);
+  -moz-box-shadow:0px 0px 4px 1px rgb(189, 189, 189);
+  -o-box-shadow:0px 0px 4px 1px rgb(189, 189, 189);
+  -ms-box-shadow:0px 0px 4px 1px rgb(189, 189, 189);
+  box-shadow:0px 0px 4px 1px rgb(189, 189, 189);
+  width: 80%;
+  margin: 100px auto;
+}
+.bind-page h3{
+  margin-top:10px;
+}
+.bind-top  h4  a:hover{
+  color: #353f49;
+}
+.bind-page input[type="text"], .bind-page input[type="password"] {
+  font-size:16px;
+  padding: 10px 16px;
+  width: 30%;
+  color: #999;
+  outline: none;
+  border: 1px solid #E2DCDC;
+  background: #FFFFFF;
+  -webkit-transition:.5s all;
+  -moz-transition:.5s all;
+  -o-transition:.5s all;
+  -ms-transition:.5s all;
+  transition:.5s all;
+  -webkit-appearance:none;
+  float: left;
+  margin-bottom: 10px;
+  margin-left:10px;
+}
+.bind-page input[type="text"]:focus, .bind-page input[type="password"]:focus{
+  border-color:#ff6540;
+}
+.bind-page .formlabel{
+  width:15%;
+  height: 40px;
+  text-align: right;
+  float:left;
+  margin-right: 10px;
+  color: coral;
+}
+.bind-page input[type="submit"] {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  background:#ff6540;
+  width: 30%;
+  padding: .8em 1em;
+  font-size: 16px;
+  margin: 0.5em 0 0;
+  -webkit-transition:.5s all;
+  -moz-transition:.5s all;
+  -o-transition:.5s all;
+  -ms-transition:.5s all;
+  transition:.5s all;
+  text-transform: uppercase;
+  -webkit-appearance:none;
+}
+.bind-page input[type="submit"]:hover {
+  background: #c9302c;
+  letter-spacing: 5px;
+}
+.bind-page .container{
+  width:100%;
+}
+.bind-page .form-group{
+  display:block;
+}
+.boxPicture{
+ display: block;
+  width: 10px;
+  height:10px;
+  text-align:center;
+  padding: 20px;
+}
