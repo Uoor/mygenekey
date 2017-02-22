@@ -198,7 +198,7 @@
                         <div class="clearfix"></div>
                     </div>
                     <input type="submit" value="注 册">
-                    <h6> 已有账号？<a href="login.html">马上登录</a></h6>
+                    <h6> 已有账号？<a href="${ pageContext.request.contextPath }/user_loginPage.action">马上登录</a></h6>
                     <div class="clearfix"></div>
                 </form>
             </div>
