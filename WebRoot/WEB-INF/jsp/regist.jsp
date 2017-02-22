@@ -171,6 +171,7 @@
                 <form action="${pageContext.request.contextPath }/user_mobileRegister.action"  method="post" novalidate="novalidate" onsubmit="return checkForm();">
                     <div class="form-group ">
                         <label  class="formlabel">手机号</label>
+                        <input type ="text" id="login-mobile" class="form-control" name="phone" pattern="\d{11}" placeholder="请输入手机号" required="required" onblur="checkUsername()">
                         <span id="span1"></span><!-- 补充ajax中返回参数-->
                     </div>
                     <div class="clearfix"></div>
