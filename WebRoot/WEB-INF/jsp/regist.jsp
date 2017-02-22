@@ -74,6 +74,7 @@
                 }
             });
         }
+
         function checkUsername(){
             // 获得文件框值:
             var username = document.getElementById("login-mobile").value;
@@ -92,6 +93,7 @@
             // 4.发送
             xhr.send(null);
         }
+
         function createXmlHttp(){
             var xmlHttp;
             try{ // Firefox, Opera 8.0+, Safari
@@ -110,7 +112,9 @@
             }
             return xmlHttp;
         }
+
     </script>
+
 </head>
 <body >
 <div class="gtco-loader"></div>
@@ -134,6 +138,7 @@
             </div>
         </div>
     </nav>
+
 
     <div class="login-page" >
         <div class="container">
@@ -175,6 +180,7 @@
             </div>
         </div>
     </div>
+
 </div>
 
 

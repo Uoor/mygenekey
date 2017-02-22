@@ -141,11 +141,13 @@
 		<property name="userService" ref="userService"/>
 	</bean>
 
+<!--
 
-	<!-- Service的配置  ===========================-->
+	&lt;!&ndash; Service的配置  ===========================&ndash;&gt;
 	<bean id="userService" class="cn.mygenekey.user.service.UserService">
 		<property name="userDao" ref="userDao"/>
 	</bean>
+-->
 
 	<bean id="categoryService" class="cn.mygenekey.category.service.CategoryService">
 		<property name="categoryDao" ref="categoryDao"/>

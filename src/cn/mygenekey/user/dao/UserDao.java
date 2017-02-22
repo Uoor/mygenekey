@@ -79,4 +79,14 @@ public class UserDao extends HibernateDaoSupport {
 	public void delete(User existUser) {
 		this.getHibernateTemplate().delete(existUser);
 	}
+
+	public User findByUserphone(String phone){
+		String hql = "from User where phone = ?";
+		List<User> list = this.getHibernateTemplate().find(hql, phone);
+		if (list != null && list.size() > 0) {
+			return list.get(0);
+		}
+		return null;
+	}
+
 }
