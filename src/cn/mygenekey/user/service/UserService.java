@@ -1,30 +1,27 @@
 package cn.mygenekey.user.service;
 
-import java.util.List;
-
-import org.springframework.transaction.annotation.Transactional;
-
-import cn.mygenekey.order.vo.Order;
 import cn.mygenekey.user.dao.UserDao;
 import cn.mygenekey.user.vo.User;
-import cn.mygenekey.utils.MailUitls;
 import cn.mygenekey.utils.PageBean;
-import cn.mygenekey.utils.UUIDUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 /**
  * 用户名模块业务层代码
  *  
  *
  */
+@Service
 @Transactional
 public class UserService {
 	// 注入UserDao
+	@Autowired
 	private UserDao userDao;
 
-	public void setUserDao(UserDao userDao) {
-		this.userDao = userDao;
-	}
-	
+
 	
 	// 按用户名查询用户的方法:
 	public User findByUsername(String username){
@@ -88,5 +85,11 @@ public class UserService {
 
 	public void delete(User existUser) {
 		userDao.delete(existUser);
+	}
+
+
+	public User findByUserphone(String phone){
+
+		return userDao.findByUserphone(phone);
 	}
 }

@@ -1,24 +1,18 @@
 package cn.mygenekey.user.action;
 
-import java.io.IOException;
-
-import javax.servlet.http.HttpServletResponse;
-
-import org.apache.struts2.ServletActionContext;
-
+import cn.mygenekey.base.BaseAction;
 import cn.mygenekey.user.service.UserService;
 import cn.mygenekey.user.vo.User;
-import cn.mygenekey.base.BaseAction;
-
-import com.opensymphony.xwork2.ActionSupport;
-import com.opensymphony.xwork2.ModelDriven;
+import cn.mygenekey.utils.MessageSend;
+import cn.mygenekey.utils.ValidateUtils;
+import net.sf.json.JSONObject;
+import org.apache.struts2.ServletActionContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
-import cn.mygenekey.utils.ValidateUtils;
-import cn.mygenekey.utils.DataUtils;
-import cn.mygenekey.utils.MessageSend;
-import net.sf.json.JSONObject;
+
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 /**
  * 用户模块Action的类
@@ -37,6 +31,9 @@ public class UserAction extends BaseAction<User> {
 	}
 	// 接收验证码:
 	private String checkcode;
+
+	//接收注册时的phone参数信息；
+	//private String phone;
 	
 	public void setCheckcode(String checkcode) {
 		this.checkcode = checkcode;
@@ -49,6 +46,11 @@ public class UserAction extends BaseAction<User> {
 		this.userService = userService;
 	}
 */
+//获取注册页面中的phone参数
+//	public void setPhone(String phone) {
+//		this.phone = phone;
+//	}
+
 	/**
 	 * 跳转到注册页面的执行方法
 	 */
@@ -78,6 +80,27 @@ public class UserAction extends BaseAction<User> {
 		return NONE;
 	}
 
+
+	/*
+	AJAX进行异步校验手机号是否存在的的执行方法
+	 */
+	public String findByPhone() throws IOException {
+		// 调用Service进行查询:
+		//user作为模型驱动，后面get的是在传过来页面的参数内容
+		User existUser = userService.findByUserphone(user.getPhone());
+		// 获得response对象,向页面输出:
+		HttpServletResponse response = ServletActionContext.getResponse();
+		response.setContentType("text/html;charset=UTF-8");
+		// 判断
+		if (existUser != null) {
+			// 查询到该用户:用户名已经存在
+			response.getWriter().println("<font color='red'>该手机号已经存在</font>");
+		} else {
+			// 没查询到该用户:用户名可以使用
+			response.getWriter().println("<font color='green'>该手机号可以使用</font>");
+		}
+		return NONE;
+	}
 	/**
 	 * 用户注册的方法:
 	 */
@@ -131,7 +154,9 @@ public class UserAction extends BaseAction<User> {
 	 * 登录的方法
 	 */
 	public String login() {
+
 		User existUser = userService.login(user);
+
 		// 判断
 		if (existUser == null) {
 			// 登录失败
@@ -163,26 +188,16 @@ public class UserAction extends BaseAction<User> {
 	 *
 	 * @return
 	 */
-	public String mobileRegister() throws Exception {
+	public void mobileRegister() throws Exception {
 
 
-		String phone1= getParameter("phone");
-		String dynamic1 = getParameter("dynamicCode");
-		String password1 = getParameter("password");
-		System.out.println("phone1->" + phone1);
-		System.out.println("dynamic1->" + dynamic1);
-
-		String phone = (String) ServletActionContext.getRequest()
-				.getSession().getAttribute("phone");
-		String dynamic = (String) ServletActionContext.getRequest()
-				.getSession().getAttribute("dynamic");
-		String password = (String) ServletActionContext.getRequest()
-				.getSession().getAttribute("password");
+		String phone= getParameter("phone");
+		String dynamic = getParameter("dynamicCode");
+		String password = getParameter("password");
 
 		String verificationCode = (String) getSession().get(
 				"verificationCode");
-		System.out.println("phone2->" + phone);
-		System.out.println("dynamic2->" + dynamic);
+
 		if (ValidateUtils.checkMobileNumber(phone)
 				&& ValidateUtils.checkVerificationCode(dynamic)) {
 
@@ -200,31 +215,93 @@ public class UserAction extends BaseAction<User> {
 					user.setState(1);
 					userService.save(user);
 
-					getSession().put("user", user);
-					return "loginSuccess";
+					this.addActionMessage("注册成功!请登陆!");
 
 				} else {
-					return "registPage";
+					this.addActionMessage("注册失败!验证码有误!");
 				}
 			} else {
-				return "registPage";
+				this.addActionMessage("注册失败!验证码有误!");
 			}
 		} else {
-			return "toLogin";
+			this.addActionMessage("注册失败!验证码有误!");
 		}
+	}
+
+	/**
+	 * 找回密码 页面
+	 * 要判断 手机号是否已经存在 动作
+	 * @return
+	 */
+		public String findPasswordBackPage() throws Exception {
+			return "findPasswordBackPage";
 	}
 
 
 
+
+		/**
+		 * 找回密码
+		 * 要判断 手机号是否已经存在 动作
+		 * @return
+		 */
+	public String findPasswordBack() throws Exception {
+
+
+		String phone= getParameter("phone");
+		String dynamic = getParameter("dynamicCode");
+
+		String pswdBackCode = (String) getSession().get(
+				"pswdBackCode");
+
+		if (ValidateUtils.checkMobileNumber(phone)
+				&& ValidateUtils.checkVerificationCode(dynamic)) {
+
+			System.out.println("pswdBackCode->" + pswdBackCode);
+			if (pswdBackCode != null) {
+				// 进行短信验证码比较
+				if (pswdBackCode.equals(dynamic)) {
+					// 验证码通过，跳转至主页面
+					//根据用户名找到改用户
+					User findPasswordUser = userService.findByUsername(user.getUsername());
+					getSession().put("findPasswordUser", findPasswordUser);
+
+					return "findPasswordBackNext";
+
+				} else {
+					this.addActionMessage("找回密码失败!");
+					return "findPasswordBackPage";
+				}
+			} else {
+				this.addActionMessage("找回密码失败!");
+				return "findPasswordBackPage";
+			}
+		} else {
+			this.addActionMessage("找回密码失败!");
+			return "findPasswordBackPage";
+		}
+	}
+
+
+	public String findPasswordBackNext() throws Exception {
+
+		String password= getParameter("password");
+		User findPasswordUser = (User)getSession().get("findPasswordUser");
+
+		findPasswordUser.setPassword(password);
+		userService.update(findPasswordUser);
+		return "login";
+
+
+	}
 	/**
-	 * 发送短信验证码
+	 * 注册发送短信验证码
 	 *
 	 * @return
 	 */
 	//@Action(value = "sendVerification")
 	public void sendVerification() throws Exception {
-		String phone = (String) ServletActionContext.getRequest().getSession().getAttribute("phone");
-		System.out.println("CustomerAction.sendVerification()");
+		String phone = getParameter("phone");
 		// 1.生成验证码
 		String verificationCode = MessageSend.getVerificationCode();
 		System.out.println("verificationCode:" + verificationCode);
@@ -236,7 +313,33 @@ public class UserAction extends BaseAction<User> {
 				session.clear();
 				session.put("verificationCode", verificationCode);
 				writeStringToResponse("【ok】");
-				mobileRegister();
+			}
+		} catch (Exception e) {
+			log.error("发送验证码失败！");
+			e.printStackTrace();
+		}
+
+	}
+
+	/**
+	 * 找回密码发送短信验证码
+	 *
+	 * @return
+	 */
+	//@Action(value = "sendVerification")
+	public void findPswdBack() throws Exception {
+		String phone = getParameter("phone");
+		// 1.生成验证码
+		String pswdBackCode = MessageSend.getVerificationCode();
+		System.out.println("pswdBackCode:" + pswdBackCode);
+		try {
+			JSONObject result = JSONObject
+					.fromObject(MessageSend.findpswdDynamicVerification(
+							pswdBackCode, phone));
+			if ("OK".equals(result.get("msg"))) {
+				//session.clear();
+				session.put("pswdBackCode", pswdBackCode);
+				writeStringToResponse("【ok】");
 			}
 		} catch (Exception e) {
 			log.error("发送验证码失败！");

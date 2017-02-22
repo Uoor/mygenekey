@@ -33,7 +33,46 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+<script type="text/javascript">
+	var countdown = 60;
+	function settime(obj) {
+		if(countdown == 60){
+			sendmessage();
+			obj.setAttribute("disabled", true);
+			obj.value="重新发送(" + countdown + ")";
+			countdown--;
+		}else if (countdown == 0) {
+			obj.removeAttribute("disabled");
+			obj.value="发送验证码";
+			countdown = 60;
+			return;
+		} else {
+			obj.setAttribute("disabled", true);
+			obj.value="重新发送(" + countdown + ")";
+			countdown--;
+		}
+		setTimeout(function() {
+					settime(obj) }
+				,1000)
+	}
 
+	function sendmessage() {
+		//设置button效果，开始计时
+		var phone = $("#login-mobile").val();
+		$.ajax({
+			type: "POST", //用POST方式传输
+			dataType: "text", //数据格式:JSON
+			url: 'user_sendVerification', //目标地址
+			data: "phone=" + phone/* +"&uid=" + uid + "&code=" + code*/,
+			error: function (XMLHttpRequest, textStatus, errorThrown) { },
+			success: function (msg){
+				if(msg!="【ok】"){
+					//do something
+				}
+			}
+		});
+	}
+</script>
 	</head>
 	<body >
 		

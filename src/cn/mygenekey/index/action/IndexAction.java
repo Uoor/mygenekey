@@ -1,14 +1,13 @@
 package cn.mygenekey.index.action;
 
-import java.util.List;
-
 import cn.mygenekey.category.service.CategoryService;
 import cn.mygenekey.category.vo.Category;
 import cn.mygenekey.product.service.ProductService;
 import cn.mygenekey.product.vo.Product;
-
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
+
+import java.util.List;
 
 /**
  * 首页访问的Action
@@ -16,7 +15,8 @@ import com.opensymphony.xwork2.ActionSupport;
  *
  */
 public class IndexAction extends ActionSupport{
-	// 注入一级分类的Service:
+
+	// 注入一级分类的Service.:
 	private CategoryService categoryService;
 	// 注入商品的Service
 	private ProductService productService;
