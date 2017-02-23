@@ -188,7 +188,7 @@ public class UserAction extends BaseAction<User> {
 	 *
 	 * @return
 	 */
-	public void mobileRegister() throws Exception {
+	public String mobileRegister() throws Exception {
 
 
 		String phone= getParameter("phone");
@@ -216,15 +216,19 @@ public class UserAction extends BaseAction<User> {
 					userService.save(user);
 
 					this.addActionMessage("注册成功!请登陆!");
+					return "loginPage";
 
 				} else {
 					this.addActionMessage("注册失败!验证码有误!");
+					return "registPage";
 				}
 			} else {
 				this.addActionMessage("注册失败!验证码有误!");
+				return "registPage";
 			}
 		} else {
 			this.addActionMessage("注册失败!验证码有误!");
+			return "registPage";
 		}
 	}
 
@@ -326,7 +330,6 @@ public class UserAction extends BaseAction<User> {
 	 *
 	 * @return
 	 */
-	//@Action(value = "sendVerification")
 	public void findPswdBack() throws Exception {
 		String phone = getParameter("phone");
 		// 1.生成验证码
@@ -346,6 +349,14 @@ public class UserAction extends BaseAction<User> {
 			e.printStackTrace();
 		}
 
+	}
+
+	public String forgetPsw(){
+		return "forgetPsw";
+	}
+
+	public String resetPswNext(){
+		return "resetPswNext";
 	}
 
 }

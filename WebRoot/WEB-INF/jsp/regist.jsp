@@ -62,7 +62,10 @@
                 alert("请阅读法律声明！");
             return false;
         }
+
         var countdown=60;
+
+
         function settime(obj) {
             if(countdown == 60){
                 sendmessage();
@@ -83,6 +86,8 @@
                         settime(obj) }
                     ,1000)
         }
+
+
         function sendmessage() {
             //设置button效果，开始计时
             var phone = $("#login-mobile").val();

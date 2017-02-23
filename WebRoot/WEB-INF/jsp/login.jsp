@@ -98,7 +98,7 @@
 					<div class="container">
 						<label class="checkbox-login">
 							<input type="checkbox"  name="checkbox">记住密码
-							<a href="#" class="forgot">忘记密码？</a></label>
+							<a href="${ pageContext.request.contextPath }/user_forgetPsw.action" class="forgot">忘记密码？</a></label>
 						<div class="clearfix"></div>
 					</div>
 					<input type="submit" value="登 录" >
