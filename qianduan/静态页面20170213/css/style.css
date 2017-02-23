@@ -2073,7 +2073,7 @@ form label {
   -o-box-shadow:0px 0px 4px 1px rgb(189, 189, 189);
   -ms-box-shadow:0px 0px 4px 1px rgb(189, 189, 189);
   box-shadow:0px 0px 4px 1px rgb(189, 189, 189);
-  width: 45%;
+  width: 50%;
   margin: 100px auto;
 }
 .login-page h3{
@@ -2085,7 +2085,7 @@ form label {
 .login-page input[type="text"], .login-page input[type="password"] {
   font-size:16px;
   padding: 10px 16px;
-  width: 60%;
+  width: 65%;
   color: #999;
   outline: none;
   border: 1px solid #E2DCDC;
@@ -2120,7 +2120,7 @@ form label {
 
 .login-page input.phoneCheck{
   float: left;
-  width: 28%;
+  width: 30%;
   ime-mode: disabled;
 }
 .login-page  .getphoneCode{
