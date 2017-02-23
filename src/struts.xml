@@ -37,8 +37,11 @@
 			<result name="loginSuccess" type="redirectAction">index</result>
 			<result name="quit" type="redirectAction">index</result>
 			<result name="checkcodeFail">/WEB-INF/jsp/regist.jsp</result>
+
+
 			<result name="forgetPsw">/WEB-INF/jsp/resetPsw.jsp</result>
-			<result name="resetPswNext">/WEB-INF/jsp/resetPswNext.jsp</result>
+			<result name="findPasswordBackNext">/WEB-INF/jsp/resetPswNext.jsp</result>
+			<result name="findPasswordBackPage">/WEB-INF/jsp/resetPsw.jsp</result>
 		</action>
 		
 		<!-- 验证码Action -->

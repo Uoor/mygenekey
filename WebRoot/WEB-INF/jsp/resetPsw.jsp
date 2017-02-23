@@ -44,6 +44,7 @@
     <script src="${pageContext.request.contextPath}/js/respond.min.js"></script>
     <![endif]-->
     <script type="text/javascript">
+
         var countdown = 60;
         function settime(obj) {
             if(countdown == 60){
@@ -89,31 +90,14 @@
 <div class="gtco-loader"></div>
 
 <div >
-    <nav class="gtco-nav" >
-        <div class="gtco-container">
-            <div class="row">
-                <div class="col-xs-2 ">
-                    <div id="gtco-logo"><a href="index.html">基因钥匙</a></div>
-                </div>
-                <div class="col-xs-10 text-right menu-1 main-nav">
-                    <ul>
-                        <li ><a href="#">关于我们</a></li>
-                        <li><a href="#" >商城</a></li>
-                        <li><a href="#" >示例报告</a></li>
-                        <li><a href="#">检测流程</a></li>
-                        <li><a href="#" >商务合作</a></li>
-                        <li><a href="#" >爱心公益</a></li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </nav>
+    <%@include file="title.jsp"%>
     <div class="login-page">
         <div class="container">
             <div class="login-body" >
                 <h3 class="page-header">找回密码</h3>
-                <form action="${pageContext.request.contextPath }/user_resetPswNext.action" method="post">
+
+
+                <form action="${pageContext.request.contextPath }/user_findPasswordBack.action" method="post">
                     <div class="form-group ">
                         <label  class="formlabel">手机号</label>
                         <input type ="text" id="login-mobile" class="form-control" name="phone" placeholder="请输入手机号" required="">
@@ -121,65 +105,21 @@
                     <div class="clearfix"></div>
                     <div class="form-group ">
                         <label  class="formlabel">手机验证码</label>
-                        <input type ="text"  name="phoneCode" class="phoneCheck form-control" placeholder="请输入短信验证码" required="">
+                        <input type ="text"  name="dynamicCode" class="phoneCheck form-control" placeholder="请输入短信验证码" required="">
                         <input type="button" class="getphoneCode form-control"  value="发送验证码" onclick="settime(this)" />
                     </div>
                     <div class="clearfix"></div>
                     <input type="submit" value="下一步" >
                     <h6> 未注册用户？<a href="register.html">立即注册</a></h6>
                 </form>
+
+
+
             </div>
         </div>
     </div>
-    <div class="fh5co-footer"  >
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <h3 class="section-title">关于我们</h3>
-                    <ul class="contact-info">
-                        <li><a href="#">公司概况</a></li>
-                        <li><a href="#">技术优势</a></li>
-                        <li><a href="#">顾问团队</a></li>
 
-                    </ul>
-                </div>
-
-                <div class="col-md-3 ">
-                    <h3 class="section-title">基因科普</h3>
-                    <ul class="contact-info" >
-                        <li><a href="#">基因知识宣传</a></li>
-                        <li><a href="#">媒体宣传</a></li>
-                        <li><a href="#">科技动态</a></li>
-
-                    </ul>
-                </div>
-                <div class="col-md-3 ">
-                    <h3 class="section-title">客户服务</h3>
-                    <ul class="contact-info">
-                        <li><a href="#">联系客服</a></li>
-                        <li><a href="#">常见问题</a></li>
-                        <li><a href="#">隐私声明</a></li>
-                        <li><a href="#">服务协议</a></li>
-                        <li><a href="#">商务合作</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-3 to-animate">
-                    <h3 class="section-title">关注我们</h3>
-                    <ul class="contact-info" >
-                        <li>微信公众号:
-                            <span>weixinhao123</span></li>
-                        <li><img class="erweima" src="${pageContext.request.contextPath}/images/img_2.jpg"/></li>
-                        <li>电话:
-                            <span>12345667891</span></li>
-                        <li>邮箱:
-                            <span>mygenkey@mygenkey.com</span></li>
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+   <%@include file="foot.jsp"%>
     <!-- jQuery -->
     <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
     <!-- jQuery Easing -->
