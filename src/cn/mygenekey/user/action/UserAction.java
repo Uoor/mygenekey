@@ -356,8 +356,10 @@ public class UserAction extends BaseAction<User> {
 	    return "forgetPsw";
     }
 
+
+
     /*
-重置密码
+重置密码，不能获取自己这边的验证码内容
  */
     public String findPasswordBackNext() throws Exception {
 
@@ -373,4 +375,26 @@ public class UserAction extends BaseAction<User> {
     }
 
 
+	/**
+	 *跳转至用户个人中心
+	 */
+
+public String userInfo(){
+
+	return "userInfo";
+}
+
+/**
+ *跳转至订单详情
+ */
+public String orderDetail(){
+	return "orderDetail";
+}
+
+/*跳转至绑定盒子
+
+ */
+public String bindBox(){
+	return "bindBox";
+}
 }

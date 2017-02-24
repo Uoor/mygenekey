@@ -3,12 +3,12 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>基因钥匙| 绑定</title>
+	<title>基因钥匙| 个人信息中心</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template" />
 	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
 	<!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet"> -->
-		<link href="css/font-awesome.min.css" rel="stylesheet">
+	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -26,7 +26,7 @@
 	<link rel="stylesheet" href="css/flexslider.css">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/bind.css">
+		<link rel="stylesheet" href="css/userInfo.css">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -34,39 +34,7 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-		<script>
-			window.onload=function()
-			{
-				var oT=document.getElementById('boxCode');
-				oT.onkeydown=function(ev)
-				{
-					var oW=oT.value;
-					var oEvent=ev||event;
-					if(oEvent.keyCode==8)
-					{
-						if(oW)
-						{
-							for(var i=0;i<oW.length;i++)
-							{
-								var newStr=oW.replace(/\s$/g,'');
-							}
-							oT.value=newStr
-						}
-					}else{
-						for(var i=0;i<oW.length;i++)
-						{
-							var arr=oW.split('');
 
-							if( (i+1)% 5 ==0)
-							{
-								arr.splice(i,0,'-');
-							}
-						}
-						oT.value=arr.join('');
-					}
-				}
-			}
-		</script>
 	</head>
 	<body >
 		
@@ -93,56 +61,29 @@
 
 			</div>
 		</nav>
-		<div class="bind-page">
+		<div class="info-page">
 			<div class="container">
-				<div class="bind-body" >
-					<h3 class="page-header bind-head" >绑  定</h3>
-					<form action="#" method="post">
-						<div class="container">
-							<div class="row">
-								<div class="col-md-6">
-						<div class="form-group ">
-							<label  class="formlabel">受检人姓名</label>
-							<input type ="text" class="form-control" name="phone" placeholder="请输入姓名" required="required">
-						</div>
-						<div class="clearfix"></div>
-						<div class="form-group ">
-							<label  class="radio formlabel">受检人性别</label>
-						<label class="sex " data-icon="fa-mars"><input type="radio" class="hidden" name="sex" value="1" /><i></i>男士</label>
-							<label class="sex"><input type="radio" class="hidden" name="sex" value="0"/><i></i>女士</label>
-						</div>
-						<div class="clearfix"></div>
-									<div class="form-group">
-										<label class="formlabel">出生日期</label>
-										<div class="selClass">
-										<select id="year" >
-											<option>请选择年份</option>
-										</select>
-										<select id="month">
-											<option>请选择月份</option>
-										</select>
-										<select id="day" >
-											<option>请选择日</option>
-										</select>
-											</div >
-									</div>
-									<div class="clearfix"></div>
-						<div class="form-group ">
-							<label  class="formlabel">盒子编号</label>
-							<input type ="text" id="boxCode" class="form-control" name="boxCode" maxlength="19" pattern="\d{4}-\d{4}-\d{4}-\d{4}" placeholder="格式：xxxx-xxxx-xxxx-xxxx" required="">
-						</div>
-
-									<div class="clearfix"></div>
-									<input type="submit" value="保 存">
-									</div>
-								<div class="col-md-6">
-									<img class="boxPicture img-responsive center-block img-rounded" src="images/img_4.jpg" />
-									<p>编号位置如图</p>
-								</div>
-
+				<div class="info-body" >
+					<h3 class="page-header">信息中心</h3>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-2">
+					<ul class="list-group list-unstyled infoLs">
+							<li><a  class="list-group-item" href="userInfo.html">
+								<i class="glyphicon glyphicon-user"></i>
+								个人账户</a></li>
+							<li><a class="list-group-item  active"  href="order.html">
+								<i class="glyphicon glyphicon-list-alt"></i>
+								订单详情</a></li>
+							<li><a class="list-group-item" href="bindbox.html">
+								<span class="glyphicon glyphicon-th-large" aria-hidden="false"></span>
+								绑定盒子</a></li>
+					</ul>
+							</div>
+							<div class="col-md-10">
 							</div>
 						</div>
-					</form>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -217,47 +158,4 @@
 	</div>
 	</body>
 </html>
-<script type="text/javascript">
 
-	var y=document.getElementById("year"),
-			m=document.getElementById("month"),
-			d=document.getElementById("day");
-
-	//年
-	var year=new Date().getFullYear();
-	for(var i=year;i>=1900;i--){
-		y.options[year+1-i]=new Option(i,i);    //第一个参数是option的文本值，第二个参数是option的value值
-	}
-
-	//月
-	for(var i=1;i<=12;i++){
-		m.options[i]=new Option(i,i);
-	}
-
-	//日
-	var day = function(){
-		d.length=1;        //初始化
-		var y_value=y.value,
-				m_value=m.value;
-		if(y_value==""||m_value==""){
-			return;
-		}
-		else{
-			var arr=[31,28,31,30,31,30,31,31,30,31,30,31];
-			if((y_value%4==0&&y_value%100!=0)||y_value%400==0){
-				arr[1]++;
-			}
-			for(i=1;i<=arr[m_value-1];i++){
-				d.options[i]=new Option(i,i);
-			}
-		}
-	}
-
-	y.onchange = function(){
-		day();
-	}
-	m.onchange = function(){
-		day();
-	}
-
-</script>

@@ -30,6 +30,9 @@
 .icon-paper-clip:before {
   content: "\e001";
 }
+.icon-cart:before {
+  content: "\e93a";
+}
 .icon-mail:before {
   content: "\e002";
 }
