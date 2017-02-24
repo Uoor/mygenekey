@@ -34,7 +34,12 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+<script type="text/javascript">
 
+	$(function() {
+		$( document ).tooltip();
+	});
+</script>
 	</head>
 	<body >
 		
@@ -64,7 +69,7 @@
 		<div class="info-page">
 			<div class="container">
 				<div class="info-body" >
-					<h3 class="page-header">信息中心</h3>
+					<h3 class="page-header orderh3">订单信息</h3>
 					<div class="container">
 						<div class="row">
 							<div class="col-md-2">
@@ -81,6 +86,31 @@
 					</ul>
 							</div>
 							<div class="col-md-10">
+								<table class="table table-responsive  table-hover orderTb">
+									<thead>
+									<tr>
+										<td class="reactid">订单号</td>
+										<td>产品名</td>
+										<td >单价</td>
+										<td class="number">数量</td>
+										<td >总价</td>
+										<td class="reactTime">交易时间</td>
+										<td class="interflow">物流信息</td>
+									</tr></thead>
+									<tr>
+										<td class="reactid"> 2575414177667140</td>
+										<td class="productsName">检测产品三人</td>
+										<td class="pricePer">3999</td>
+										<td class="number">4</td>
+										<td class="totalPrice">15996</td>
+										<td class="reactState">2017-01-12 16:09:21</td>
+										<td class="operat">
+											<a href="#" title="物流信息" >已发货</a>
+										</td>
+									</tr>
+								</table>
+								<dl id="giftItems" class="hidden" style="display: none;">
+								</dl>
 							</div>
 						</div>
 					</div>
