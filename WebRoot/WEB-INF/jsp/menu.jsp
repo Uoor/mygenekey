@@ -9,6 +9,9 @@
 			<li id="headerRegister" class="headerRegister"
 				style="display: list-item;"><a href="${ pageContext.request.contextPath }/user_registPage.action">注册</a>|
 			</li>
+				<li id="headerRegister" class="headerRegister"
+					style="display: list-item;"><a href="${ pageContext.request.contextPath }/user_userInfo.action">用户个人中心</a>|
+				</li>
 			</s:if>
 			<s:else>
 			<li id="headerLogin" class="headerLogin" style="display: list-item;">
@@ -37,6 +40,7 @@
 <div class="span24">
 	<ul class="mainNav">
 		<li><a href="${ pageContext.request.contextPath }/index.action">首页</a> |</li>
+
 		<s:iterator var="c" value="#session.cList">
 			<li><a href="${ pageContext.request.contextPath }/product_findByCid.action?cid=<s:property value="#c.cid"/>&page=1"><s:property value="#c.cname"/></a> |</li>
 		</s:iterator>
