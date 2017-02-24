@@ -5,6 +5,7 @@ import cn.mygenekey.user.service.UserService;
 import cn.mygenekey.user.vo.User;
 import cn.mygenekey.utils.MessageSend;
 import cn.mygenekey.utils.ValidateUtils;
+import com.opensymphony.xwork2.ActionContext;
 import net.sf.json.JSONObject;
 import org.apache.struts2.ServletActionContext;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -188,15 +189,18 @@ public class UserAction extends BaseAction<User> {
 	 *
 	 * @return
 	 */
-	public void mobileRegister() throws Exception {
+	public String mobileRegister() throws Exception {
 
 
 		String phone= getParameter("phone");
 		String dynamic = getParameter("dynamicCode");
 		String password = getParameter("password");
 
-		String verificationCode = (String) getSession().get(
-				"verificationCode");
+//		String verificationCode = (String) getSession().get(
+//				"verificationCode");
+
+        String verificationCode = (String)ActionContext.getContext().getSession().get("verificationCode");
+
 
 		if (ValidateUtils.checkMobileNumber(phone)
 				&& ValidateUtils.checkVerificationCode(dynamic)) {
@@ -216,15 +220,19 @@ public class UserAction extends BaseAction<User> {
 					userService.save(user);
 
 					this.addActionMessage("注册成功!请登陆!");
+					return "loginPage";
 
 				} else {
-					this.addActionMessage("注册失败!验证码有误!");
+					this.addActionMessage("注册失败!验证码有误!verificationCode.equals(dynamic)不相等");
+					return "registPage";
 				}
 			} else {
-				this.addActionMessage("注册失败!验证码有误!");
+				this.addActionMessage("注册失败!验证码有误!verificationCode为空");
+				return "registPage";
 			}
 		} else {
 			this.addActionMessage("注册失败!验证码有误!");
+			return "registPage";
 		}
 	}
 
@@ -251,8 +259,10 @@ public class UserAction extends BaseAction<User> {
 		String phone= getParameter("phone");
 		String dynamic = getParameter("dynamicCode");
 
-		String pswdBackCode = (String) getSession().get(
-				"pswdBackCode");
+        System.out.println("dynamicCode->" + dynamic);
+
+		//String pswdBackCode = (String) getSession().get("pswdBackCode");
+        String pswdBackCode = (String)ActionContext.getContext().getSession().get("pswdBackCode");
 
 		if (ValidateUtils.checkMobileNumber(phone)
 				&& ValidateUtils.checkVerificationCode(dynamic)) {
@@ -283,17 +293,6 @@ public class UserAction extends BaseAction<User> {
 	}
 
 
-	public String findPasswordBackNext() throws Exception {
-
-		String password= getParameter("password");
-		User findPasswordUser = (User)getSession().get("findPasswordUser");
-
-		findPasswordUser.setPassword(password);
-		userService.update(findPasswordUser);
-		return "login";
-
-
-	}
 	/**
 	 * 注册发送短信验证码
 	 *
@@ -309,9 +308,13 @@ public class UserAction extends BaseAction<User> {
 			JSONObject result = JSONObject
 					.fromObject(MessageSend.sendDynamicVerification(
 							verificationCode, phone));
+
+
 			if ("OK".equals(result.get("msg"))) {
-				session.clear();
-				session.put("verificationCode", verificationCode);
+			    //改用session原生方式
+                ActionContext.getContext().getSession().put("verificationCode", verificationCode);
+//				session.clear();
+//				session.put("verificationCode", verificationCode);
 				writeStringToResponse("【ok】");
 			}
 		} catch (Exception e) {
@@ -326,10 +329,9 @@ public class UserAction extends BaseAction<User> {
 	 *
 	 * @return
 	 */
-	//@Action(value = "sendVerification")
 	public void findPswdBack() throws Exception {
 		String phone = getParameter("phone");
-		// 1.生成验证码
+		// 1.生成验证码,6位数值
 		String pswdBackCode = MessageSend.getVerificationCode();
 		System.out.println("pswdBackCode:" + pswdBackCode);
 		try {
@@ -338,7 +340,9 @@ public class UserAction extends BaseAction<User> {
 							pswdBackCode, phone));
 			if ("OK".equals(result.get("msg"))) {
 				//session.clear();
-				session.put("pswdBackCode", pswdBackCode);
+				//session.put("pswdBackCode", pswdBackCode);
+
+                ActionContext.getContext().getSession().put("pswdBackCode", pswdBackCode);
 				writeStringToResponse("【ok】");
 			}
 		} catch (Exception e) {
@@ -347,5 +351,26 @@ public class UserAction extends BaseAction<User> {
 		}
 
 	}
+
+	public String forgetPsw(){
+	    return "forgetPsw";
+    }
+
+    /*
+重置密码
+ */
+    public String findPasswordBackNext() throws Exception {
+
+        String password= getParameter("password");
+ //       User findPasswordUser = userService.findByUsername(user.getUsername());
+       User findPasswordUser = (User)getSession().get("findPasswordUser");
+
+        findPasswordUser.setPassword(password);
+        userService.update(findPasswordUser);
+        return "login";
+
+
+    }
+
 
 }
