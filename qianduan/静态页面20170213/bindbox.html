@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>基因钥匙| 注册</title>
+	<title>基因钥匙| 个人信息中心</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template" />
 	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
@@ -26,6 +26,7 @@
 	<link rel="stylesheet" href="css/flexslider.css">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/userInfo.css">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -33,31 +34,12 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-		<script type="text/javascript">
-			var countdown=60;
-			function settime(obj) {
-				if (countdown == 0) {
-					obj.removeAttribute("disabled");
-					obj.value="免费获取验证码";
-					countdown = 60;
-					return;
-				} else {
-					obj.setAttribute("disabled", true);
-					obj.value="重新发送(" + countdown + ")";
-					countdown--;
-				}
-				setTimeout(function() {
-							settime(obj) }
-						,1000)
-			}
-
-		</script>
-
 
 	</head>
 	<body >
 		
 	<div class="gtco-loader"></div>
+
 	<div >
 		<nav class="gtco-nav" >
 			<div class="gtco-container">
@@ -76,51 +58,53 @@
 						</ul>
 					</div>
 				</div>
+
 			</div>
 		</nav>
+		<div class="info-page">
+			<div class="container">
+				<div class="info-body" >
+					<h3 class="page-header bindboxh3">绑定唾液盒
+					<span>
+						<i class="glyphicon glyphicon-info-sign"></i>
+						拥有采集器编号即可将检测报告绑定在同一账号中
+					</span>
+					</h3>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-2">
+					<ul class="list-group list-unstyled infoLs">
+							<li><a  class="list-group-item" href="userInfo.html">
+								<i class="glyphicon glyphicon-user"></i>
+								个人账户</a></li>
+							<li><a class="list-group-item" href="order.html">
+								<i class="glyphicon glyphicon-list-alt"></i>
+								订单详情</a></li>
+							<li><a class="list-group-item  active" href="bindbox.html">
+								<span class="glyphicon glyphicon-th-large" aria-hidden="false"></span>
+								绑定盒子</a></li>
+					</ul>
+							</div>
+							<div class="col-md-10">
+								<button type="button" class="btn btn-lg testInfo">
+									<img src="images/img_6.jpg" class="center-block img-circle img-responsive testHead" >
+									<span>
+									<h5 class="userName">受检人姓名</h5>
+										<p class="userbirth">出生：1989-02-23</p>
+										<p class="userbirth">采集器编号：1232-1234-2454-6786</p>
+									</span>
+									<div class="testForm">
+										<i class="icon-eye"></i>
+										<p>检测报告已生成(2017-02-18)</p></div>
+								</button>
+								<button type="button" class="btn btn-lg icon-plus2 testInfo" style="float: right"></button>
 
-		<div class="login-page" >
-		<div class="container">
-				<div class="login-body" >
-					<h3 class="page-header">注 册</h3>
-					<form action="#" method="post">
-						<div class="form-group ">
-							<label  class="formlabel">手机号</label>
-						<input type ="text" class="form-control" name="phone" placeholder="请输入手机号" required="">
+							</div>
 						</div>
-						<div class="clearfix"></div>
-						<div class="form-group ">
-							<label  class="formlabel">密码</label>
-							<input type="password"  class="form-control" name="password" placeholder="请设置密码" required ="">
-						</div>
-						<div class="clearfix"></div>
-						<div class="form-group ">
-							<label  class="formlabel">确认密码</label>
-							<input type="password"  class="form-control"name="passwordCheck" placeholder="请重新密码" required ="">
-						</div>
-							<div class="clearfix"></div>
-						<div class="form-group ">
-							<label  class="formlabel">手机验证码</label>
-						<input type ="text"  name="phoneCode" class="phoneCheck form-control" placeholder="请输入短信验证码" required="">
-						<input type="button" class="getphoneCode form-control"  value="发送验证码" onclick="settime(this)" />
-						</div>
-						<div class="clearfix"></div>
-						<div class="container">
-							<label class="checkbox">
-								<input type="checkbox"  name="checkbox">我已阅读并同意
-								<a href="#">《法律声明》</a></label>
-							<div class="clearfix"></div>
-						</div>
-						<input type="submit" value="注 册">
-						<h6> 已有账号？<a href="login.html">马上登录</a></h6>
-						<div class="clearfix"></div>
-					</form>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-
-
 	<div class="fh5co-footer"  >
 		<div class="container">
 			<div class="row">
