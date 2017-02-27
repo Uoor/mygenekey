@@ -2775,3 +2775,9 @@ border: midnightblue;
   margin-top:0px; ;
   width: 100%;
 }
+.login-page .info{
+  margin-top:10px;
+  text-align: center;
+  font-size:14px;
+  vertical-align: middle;
+}

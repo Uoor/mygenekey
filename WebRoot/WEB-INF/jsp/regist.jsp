@@ -37,35 +37,66 @@
     <script src="${pageContext.request.contextPath}/js/respond.min.js"></script>
     <![endif]-->
     <script type="text/javascript">
-        function checkForm(){
+        function checkphone() {
             var phone = document.getElementById("login-mobile").value;
+            var isMobile=/^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
             if(phone == null || phone == ''){
-                alert("手机号不能为空!");
+                document.getElementById("span1").innerHTML="手机号不能为空!";
                 return false;
             }
-            // 校验密码:
-            // 获得密码框的值:
+            else if(!isMobile.test(phone)) {
+                document.getElementById("span1").innerHTML="手机号输入不正确!";
+                return false;
+            }
+            checkUsername();
+            if(document.getElementById("span1").innerHTML=="用户名不可用")
+                return false;
+            else
+                return true;
+
+        }
+        function checkPassw() {
             var password = document.getElementById("password").value;
             if(password == null || password == ''){
-                alert("密码不能为空!");
+                document.getElementById("span2").innerHTML="密码不能为空!";
                 return false;
             }
+            else return true;
+        }
+        function recheckpassw(){
             // 校验确认密码:
+            var password = document.getElementById("password").value;
             var repassword = document.getElementById("repassword").value;
             if(repassword != password){
-                alert("两次密码输入不一致!");
+                document.getElementById("span3").innerHTML="两次密码输入不一致!";
                 return false;
             }
+            return true;
+        }
+
+        function checkForm(){
             //检查是否同意法律声明
             var check=document.getElementById("acc");
             if(check.checked == "")
                 alert("请阅读法律声明！");
             return false;
+            var ok = false;
+            var phoneOk = false;
+            var passwOk = false;
+
+            if(checkphone()){ phoneOk = true; }  //验证name
+            if(checkPassw())
+                if(recheckpassw())
+                { passwOk = true; } //验证password
+
+            if(phoneOk==true )
+                if(passwOk==true ){
+                alert("注册成功 ..");  //注册成功
+                return true;
+            }
+            return false;  //有误，注册失败
         }
-
         var countdown=60;
-
-
         function settime(obj) {
             if(countdown == 60){
                 sendmessage();
@@ -159,23 +190,25 @@
                 <form action="${pageContext.request.contextPath }/user_mobileRegister.action"  method="post" novalidate="novalidate" onsubmit="return checkForm();">
                     <div class="form-group ">
                         <label  class="formlabel">手机号</label>
-                        <input type ="text" id="login-mobile" class="form-control" name="phone" pattern="\d{11}" placeholder="请输入手机号" required="required" onblur="checkUsername()">
-                        <span id="span1"></span><!-- 补充ajax中返回参数-->
+                        <input type ="text" id="login-mobile" class="form-control" name="phone" pattern="\d{11}" placeholder="请输入手机号" required="required" onblur="checkphone()">
+                        <span id="span1" class="info"></span><!-- 补充ajax中返回参数-->
                     </div>
                     <div class="clearfix"></div>
                     <div class="form-group ">
                         <label  class="formlabel">密码</label>
-                        <input type="password"  class="form-control" name="password" placeholder="请设置密码" required ="required">
+                        <input type="password"  id="password"class="form-control" name="password" placeholder="请设置密码" required ="required" onblur="checkPassw()">
+                        <span id="span2"class="info"></span>
                     </div>
                     <div class="clearfix"></div>
                     <div class="form-group ">
                         <label  class="formlabel">确认密码</label>
-                        <input type="password"  class="form-control"name="passwordCheck" placeholder="请重新密码" required ="required">
+                        <input type="password" id=repassword"  class="form-control"name="passwordCheck" placeholder="请重新密码" required ="required" onblur="recheckpassw()">
+                        <span id="span3"class="info"></span>
                     </div>
                     <div class="clearfix"></div>
                     <div class="form-group ">
-                        <label  class="formlabel">手机验证码</label>
-                        <input type ="text"  name="dynamicCode" class="phoneCheck form-control" placeholder="请输入短信验证码" required="required">
+                        <label  class="formlabel">验证码</label>
+                        <input type ="text"  name="dynamicCode" class="phoneCheck form-control" placeholder="短信验证码" required="required">
                         <input type="button" class="getphoneCode form-control"  value="发送验证码" onclick="settime(this)" />
                     </div>
                     <div class="clearfix"></div>
