@@ -73,7 +73,6 @@
             }
             return true;
         }
-
         function checkForm(){
             //检查是否同意法律声明
             var check=document.getElementById("acc");
@@ -98,6 +97,12 @@
         }
         var countdown=60;
         function settime(obj) {
+            var ok=false;
+            var phoneOk =checkphone();
+            var passwOk = recheckpassw();
+            if(!phoneOk || !passwOk){
+                alert("验证码发送失败！");
+                return false;}
             if(countdown == 60){
                 sendmessage();
                 obj.setAttribute("disabled", true);
@@ -202,7 +207,7 @@
                     <div class="clearfix"></div>
                     <div class="form-group ">
                         <label  class="formlabel">确认密码</label>
-                        <input type="password" id=repassword"  class="form-control"name="passwordCheck" placeholder="请重新密码" required ="required" onblur="recheckpassw()">
+                        <input type="password" id="repassword"  class="form-control"name="passwordCheck" placeholder="请重新密码" required ="required" onblur="recheckpassw()">
                         <span id="span3"class="info"></span>
                     </div>
                     <div class="clearfix"></div>
