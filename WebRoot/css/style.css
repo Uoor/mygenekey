@@ -2085,7 +2085,7 @@ form label {
 .login-page input[type="text"], .login-page input[type="password"] {
   font-size:16px;
   padding: 10px 16px;
-  width: 65%;
+  width: 55%;
   color: #999;
   outline: none;
   border: 1px solid #E2DCDC;
@@ -2774,4 +2774,13 @@ border: midnightblue;
   float: left;
   margin-top:0px; ;
   width: 100%;
+}
+.login-page .info{
+  margin-top:10px;
+  text-align: left;
+  font-size:12px;
+  vertical-align: middle;
+  width:95px;
+  height:48px;
+
 }
