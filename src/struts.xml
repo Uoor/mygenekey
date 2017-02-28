@@ -45,12 +45,17 @@
 
 			<!--用户个人中心相关跳转-->
 			<result name="userInfo">/WEB-INF/jsp/userInfo.jsp</result>
-			<result name="orderDetail">/WEB-INF/jsp/orderDetail.jsp</result>
+
+
+
+
+
+
+		</action>
+
+		<!-- 配置首页访问的Action -->
+		<action name="barCode_*" class="barCodeAction">
 			<result name="bindBox">/WEB-INF/jsp/bindBox.jsp</result>
-
-
-
-
 		</action>
 		
 		<!-- 验证码Action -->
@@ -77,6 +82,7 @@
 			<result name="findByUid">/WEB-INF/jsp/orderList.jsp</result>
 			<result name="findByOid">/WEB-INF/jsp/order.jsp</result>
 			<result name="updateStateSuccess" type="redirectAction">order_findByUid.action?page=1</result>
+			<result name="orderDetail">/WEB-INF/jsp/orderDetail.jsp</result>
 		</action>
 		
 		<!-- 后台登录Action -->

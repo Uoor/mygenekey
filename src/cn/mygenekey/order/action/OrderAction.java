@@ -3,6 +3,7 @@ package cn.mygenekey.order.action;
 import java.io.IOException;
 import java.util.Date;
 
+import cn.mygenekey.base.BaseAction;
 import org.apache.struts2.ServletActionContext;
 
 import cn.mygenekey.cart.vo.Cart;
@@ -24,7 +25,7 @@ import com.opensymphony.xwork2.ModelDriven;
  *  
  * 
  */
-public class OrderAction extends ActionSupport implements ModelDriven<Order> {
+public class OrderAction extends BaseAction<Order> {
 	// 模型驱动使用的对象
 	private Order order = new Order();
 

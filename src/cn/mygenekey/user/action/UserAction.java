@@ -24,7 +24,6 @@ import java.io.IOException;
 @Controller
 @Scope("prototype")
 public class UserAction extends BaseAction<User> {
-	// 模型驱动使用的对象
 	private User user = new User();
 
 	public User getModel() {
@@ -391,10 +390,5 @@ public String orderDetail(){
 	return "orderDetail";
 }
 
-/*跳转至绑定盒子
 
- */
-public String bindBox(){
-	return "bindBox";
-}
 }
