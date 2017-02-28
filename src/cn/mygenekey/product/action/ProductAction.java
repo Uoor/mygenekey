@@ -1,5 +1,6 @@
 package cn.mygenekey.product.action;
 
+import cn.mygenekey.base.BaseAction;
 import cn.mygenekey.category.service.CategoryService;
 import cn.mygenekey.product.service.ProductService;
 import cn.mygenekey.product.vo.Product;
@@ -15,8 +16,7 @@ import com.opensymphony.xwork2.ModelDriven;
  *  
  * 
  */
-public class ProductAction extends ActionSupport implements
-		ModelDriven<Product> {
+public class ProductAction extends BaseAction<Product> {
 	// 用于接收数据的模型驱动.
 	private Product product = new Product();
 	// 注入商品的Service
