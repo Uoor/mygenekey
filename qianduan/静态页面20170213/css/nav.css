@@ -1,0 +1,91 @@
+
+.gtco-nav {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: 10px;
+    z-index: 1001;
+    width: 100%;
+    background: #fff;
+    webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+}
+.copyrights{
+    text-indent:-9999px;
+    height:0;
+    line-height:0;
+    font-size:0;
+    overflow:hidden;
+}
+@media screen and (max-width: 768px) {
+    .gtco-nav {
+        padding: 20px 0;
+    }
+}
+.gtco-nav #gtco-logo {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+.gtco-nav #gtco-logo em {
+    color: #FF5126;
+}
+.gtco-nav  a {
+    padding: 0px 10px;
+    color: #000;
+}
+@media screen and (max-width: 768px) {
+    .gtco-nav .menu-1, .gtco-nav .menu-2 {
+        display: none;
+    }
+}
+.gtco-nav ul {
+    padding: 0;
+    margin: 2px 0 0 0;
+}
+.gtco-nav ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline;
+
+}
+.gtco-nav ul li a {
+    font-size: 16px;
+    padding: 30px 10px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    float: left;
+}
+.gtco-nav ul li a:hover, .gtco-nav ul li a:focus, .gtco-nav ul li a:active {
+    color: #FF5126;
+}
+.state-box{
+    position: relative;
+    margin: auto;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #999;
+    background-color: #f8f8f8;
+}
+
+.state-no-login {
+    height: 30px;
+}
+.state-li{
+    position: relative;
+    display: inline-block;
+    line-height: 30px;
+    float: right;
+    width:52px;
+    height: 30px;
+}
+.state-li a{
+    position: relative;
+    font-size:12px;
+    margin: 0;
+}
