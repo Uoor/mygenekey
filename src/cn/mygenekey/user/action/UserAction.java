@@ -271,7 +271,7 @@ public class UserAction extends BaseAction<User> {
 				if (pswdBackCode.equals(dynamic)) {
 					// 验证码通过，跳转至主页面
 					//根据用户名找到改用户
-					User findPasswordUser = userService.findByUsername(user.getUsername());
+					User findPasswordUser = userService.findByUsername(user.getPhone());
 					getSession().put("findPasswordUser", findPasswordUser);
 
 					return "findPasswordBackNext";
