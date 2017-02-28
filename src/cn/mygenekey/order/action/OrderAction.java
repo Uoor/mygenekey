@@ -1,11 +1,6 @@
 package cn.mygenekey.order.action;
 
-import java.io.IOException;
-import java.util.Date;
-
 import cn.mygenekey.base.BaseAction;
-import org.apache.struts2.ServletActionContext;
-
 import cn.mygenekey.cart.vo.Cart;
 import cn.mygenekey.cart.vo.CartItem;
 import cn.mygenekey.order.service.OrderService;
@@ -14,10 +9,11 @@ import cn.mygenekey.order.vo.OrderItem;
 import cn.mygenekey.user.vo.User;
 import cn.mygenekey.utils.PageBean;
 import cn.mygenekey.utils.PaymentUtil;
-
 import com.opensymphony.xwork2.ActionContext;
-import com.opensymphony.xwork2.ActionSupport;
-import com.opensymphony.xwork2.ModelDriven;
+import org.apache.struts2.ServletActionContext;
+
+import java.io.IOException;
+import java.util.Date;
 
 /**
  * 订单Action类
@@ -200,5 +196,12 @@ public class OrderAction extends BaseAction<Order> {
 		currOrder.setState(4);
 		orderService.update(currOrder);
 		return "updateStateSuccess";
+	}
+
+	/**
+	 *跳转至订单详情
+	 */
+	public String orderDetail(){
+		return "orderDetail";
 	}
 }
