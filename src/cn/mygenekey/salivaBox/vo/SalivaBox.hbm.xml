@@ -12,6 +12,7 @@
 		<property name="barCode" column="bar_code"/>
 		<property name="birthday" column="birthday"/>
 		<property name="dnaAccredit" column="dna_accredit"/>
+		<property name="userName" column="userName"/>
 		
 		<!-- 配置用户的集合 多对一-->
 		<many-to-one name="user" lazy="false" class="cn.mygenekey.user.vo.User" column="uid"/>

@@ -16,6 +16,7 @@ public class SalivaBox implements Serializable{
 	private String barCode;
 	private Date birthday;
 	private Integer dnaAccredit;
+	private String userName;
 
 	// 用户相关 多对一:
 	private User user;
@@ -66,5 +67,13 @@ public class SalivaBox implements Serializable{
 
 	public void setUser(User user) {
 		this.user = user;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 }
