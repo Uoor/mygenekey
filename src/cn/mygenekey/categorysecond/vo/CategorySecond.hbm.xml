@@ -9,7 +9,7 @@
 		</id>
 		
 		<property name="csname"/>
-		<!-- 二级分类与一级分类的guanlian -->
+		<!-- 二级分类与一级分类的关联 -->
 		<many-to-one name="category" lazy="false" class="cn.mygenekey.category.vo.Category" column="cid"></many-to-one>
 	
 		<!-- 二级分类与商品的关联 -->
