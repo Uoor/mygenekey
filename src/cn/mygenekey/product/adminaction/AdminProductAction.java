@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 
+import cn.mygenekey.base.BaseAction;
 import org.apache.commons.io.FileUtils;
 import org.apache.struts2.ServletActionContext;
 
@@ -24,8 +25,7 @@ import com.opensymphony.xwork2.ModelDriven;
  *  
  * 
  */
-public class AdminProductAction extends ActionSupport implements
-		ModelDriven<Product> {
+public class AdminProductAction extends BaseAction<Product> {
 	// 模型驱动使用的对象
 	private Product product = new Product();
 
