@@ -46,16 +46,10 @@
 			<!--用户个人中心相关跳转-->
 			<result name="userInfo">/WEB-INF/jsp/userInfo.jsp</result>
 
-			<result name="bindBox">/WEB-INF/jsp/bindBox.jsp</result>
-
-
-
-
-
 		</action>
 
 		<!-- 配置绑定盒子Action -->
-		<action name="barCode_*" class="barCodeAction" method="{1}">
+		<action name="saliva_*" class="salivaBoxAction" method="{1}">
 			<result name="bindBox">/WEB-INF/jsp/bindBox.jsp</result>
 		</action>
 		

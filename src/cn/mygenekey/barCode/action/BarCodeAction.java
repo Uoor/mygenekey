@@ -12,10 +12,6 @@ import org.springframework.stereotype.Controller;
 @Scope("prototype")
 public class BarCodeAction extends BaseAction<BarCode>{
 
-	/*跳转至绑定盒子
-	 */
-	public String bindBox(){
-		return "bindBox";
-	}
+
 
 }

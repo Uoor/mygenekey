@@ -67,7 +67,7 @@
                                 <li><a class="list-group-item" href="${pageContext.request.contextPath}/order_orderDetail.action">
                                     <i class="glyphicon glyphicon-list-alt"></i>
                                     订单详情</a></li>
-                                <li><a class="list-group-item" href="${pageContext.request.contextPath}/barCode_bindBox.action">
+                                <li><a class="list-group-item" href="${pageContext.request.contextPath}/saliva__bindBox.action">
                                     <span class="glyphicon glyphicon-th-large" aria-hidden="false"></span>
                                     绑定盒子</a></li>
                             </ul>
