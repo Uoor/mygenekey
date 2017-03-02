@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   margin: 0;
   padding-top:0;
-  padding-bottom:10px;
+  padding-bottom:20px;
   z-index: 1001;
   width: 100%;
   background: #fff;
@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6, figure {
   float: left;
 }
 .gtco-nav ul li a {
-  font-size: 16px;
+  font-size: 18px;
   padding: 30px 10px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -152,10 +152,78 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .gtco-nav .state-no-login{
   float: right;
+background: #ededed;
 }
 .gtco-nav .state-no-login li{
   margin:0 0px;
 }
+
+.gtco-nav .state-no-login li a{
+  border:none;
+  cursor: pointer;
+  color: #000;
+  background: #ededed;
+  font-size: 16px;
+  -webkit-transition:.5s all;
+  -moz-transition:.5s all;
+  -o-transition:.5s all;
+  -ms-transition:.5s all;
+  transition:.5s all;
+  width:52px;
+  height:27px;
+  padding: 5px;
+}
+.gtco-nav .state-no-login li a:hover {
+ color: #f13f3f;
+}
+.gtco-nav .userid{
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.gtco-nav ul{
+
+}
+.gtco-nav .userlist{
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+  -webkit-transition: height, padding 0.3s;
+  float: right;
+  width:90px;
+}
+.gtco-nav .userlist:hover .gtco-nav .userlist{
+  height: auto;
+  overflow: visible;
+  border: 1px solid #eee;
+  border-top: none;
+}
+.gtco-nav .userlist li{
+  display: block;
+
+}
+.gtco-nav .userlist li a{
+  border:none;
+  cursor: pointer;
+  color: #000;
+  width: 90px;
+  height: 32px;
+  text-align: center;
+  font-size: 16px;
+  -webkit-transition:.5s all;
+  -moz-transition:.5s all;
+  -o-transition:.5s all;
+  -ms-transition:.5s all;
+  transition:.5s all;
+  padding: 0px;
+  display: block;
+}
+.gtco-nav .userlist li a:hover{
+
+  color: #ff5126;
+}
+
 
 #gtco-header .gtco-video-link a {
   color: rgba(255, 255, 255, 0.5);
