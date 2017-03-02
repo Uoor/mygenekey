@@ -2,6 +2,7 @@ package cn.mygenekey.category.adminaction;
 
 import java.util.List;
 
+import cn.mygenekey.base.BaseAction;
 import cn.mygenekey.category.service.CategoryService;
 import cn.mygenekey.category.vo.Category;
 
@@ -14,7 +15,7 @@ import com.opensymphony.xwork2.ModelDriven;
  *  
  *
  */
-public class AdminCategoryAction extends ActionSupport implements ModelDriven<Category>{
+public class AdminCategoryAction extends BaseAction<Category> {
 	// 模型驱动使用的对象.
 	private Category category = new Category();
 	public Category getModel() {

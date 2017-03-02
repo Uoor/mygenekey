@@ -1,5 +1,6 @@
 package cn.mygenekey.cart.action;
 
+import cn.mygenekey.base.BaseAction;
 import org.apache.struts2.ServletActionContext;
 
 import cn.mygenekey.cart.vo.Cart;
@@ -15,7 +16,7 @@ import com.opensymphony.xwork2.ActionSupport;
  *  
  * 
  */
-public class CartAction extends ActionSupport {
+public class CartAction extends BaseAction<CartAction> {
 	// 接收pid
 	private Integer pid;
 	// 接收数量count

@@ -2,6 +2,7 @@ package cn.mygenekey.order.adminaction;
 
 import java.util.List;
 
+import cn.mygenekey.base.BaseAction;
 import cn.mygenekey.order.service.OrderService;
 import cn.mygenekey.order.vo.Order;
 import cn.mygenekey.order.vo.OrderItem;
@@ -16,7 +17,7 @@ import com.opensymphony.xwork2.ModelDriven;
  *  
  *
  */
-public class AdminOrderAction extends ActionSupport implements ModelDriven<Order>{
+public class AdminOrderAction extends BaseAction<Order> {
 	// 模型驱动使用的类
 	private Order order = new Order();
 

@@ -1,5 +1,7 @@
 package cn.mygenekey.adminuser.action;
 
+import cn.mygenekey.base.BaseAction;
+import cn.mygenekey.user.vo.User;
 import org.apache.struts2.ServletActionContext;
 
 import cn.mygenekey.adminuser.service.AdminUserService;
@@ -8,8 +10,7 @@ import cn.mygenekey.adminuser.vo.AdminUser;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 
-public class AdminUserAction extends ActionSupport implements
-		ModelDriven<AdminUser> {
+public class AdminUserAction extends BaseAction<AdminUser> {
 	// 模型驱动使用的对象
 	private AdminUser adminUser = new AdminUser();
 

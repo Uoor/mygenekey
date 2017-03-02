@@ -2,6 +2,7 @@ package cn.mygenekey.categorysecond.adminaction;
 
 import java.util.List;
 
+import cn.mygenekey.base.BaseAction;
 import cn.mygenekey.category.service.CategoryService;
 import cn.mygenekey.category.vo.Category;
 import cn.mygenekey.categorysecond.service.CategorySecondService;
@@ -18,8 +19,7 @@ import com.opensymphony.xwork2.ModelDriven;
  *  
  * 
  */
-public class AdminCategorySecondAction extends ActionSupport implements
-		ModelDriven<CategorySecond> {
+public class AdminCategorySecondAction extends BaseAction<CategorySecond> {
 
 	// 模型驱动使用的对象
 	private CategorySecond categorySecond = new CategorySecond();
