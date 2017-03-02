@@ -5,7 +5,6 @@ import cn.mygenekey.user.service.UserService;
 import cn.mygenekey.user.vo.User;
 import cn.mygenekey.utils.MessageSend;
 import cn.mygenekey.utils.ValidateUtils;
-import com.opensymphony.xwork2.ActionContext;
 import net.sf.json.JSONObject;
 import org.apache.struts2.ServletActionContext;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +23,6 @@ import java.io.IOException;
 @Controller
 @Scope("prototype")
 public class UserAction extends BaseAction<User> {
-	// 模型驱动使用的对象
 	private User user = new User();
 
 	public User getModel() {
@@ -109,8 +107,7 @@ public class UserAction extends BaseAction<User> {
 	public String regist() {
 		// 判断验证码程序:
 		// 从session中获得验证码的随机值:
-		String checkcode1 = (String) ServletActionContext.getRequest()
-				.getSession().getAttribute("checkcode");
+		String checkcode1 = getParameter("checkcode");
 		if(!checkcode.equalsIgnoreCase(checkcode1)){
 			this.addActionError("验证码输入错误!");
 			return "checkcodeFail";
@@ -196,10 +193,10 @@ public class UserAction extends BaseAction<User> {
 		String dynamic = getParameter("dynamicCode");
 		String password = getParameter("password");
 
-//		String verificationCode = (String) getSession().get(
-//				"verificationCode");
+		String verificationCode = (String) getSession().get(
+				"verificationCode");
 
-        String verificationCode = (String)ActionContext.getContext().getSession().get("verificationCode");
+//        String verificationCode = (String)ActionContext.getContext().getSession().get("verificationCode");
 
 
 		if (ValidateUtils.checkMobileNumber(phone)
@@ -214,6 +211,7 @@ public class UserAction extends BaseAction<User> {
 					System.out.println("创建新账号");
 					User user = new User();
 					user.setName(phone);
+					user.setUsername(phone);
 					user.setPassword(password);
 					user.setPhone(phone);
 					user.setState(1);
@@ -261,8 +259,8 @@ public class UserAction extends BaseAction<User> {
 
         System.out.println("dynamicCode->" + dynamic);
 
-		//String pswdBackCode = (String) getSession().get("pswdBackCode");
-        String pswdBackCode = (String)ActionContext.getContext().getSession().get("pswdBackCode");
+		String pswdBackCode = (String) getSession().get("pswdBackCode");
+        //String pswdBackCode = (String)ActionContext.getContext().getSession().get("pswdBackCode");
 
 		if (ValidateUtils.checkMobileNumber(phone)
 				&& ValidateUtils.checkVerificationCode(dynamic)) {
@@ -273,7 +271,7 @@ public class UserAction extends BaseAction<User> {
 				if (pswdBackCode.equals(dynamic)) {
 					// 验证码通过，跳转至主页面
 					//根据用户名找到改用户
-					User findPasswordUser = userService.findByUsername(user.getUsername());
+					User findPasswordUser = userService.findByUsername(user.getPhone());
 					getSession().put("findPasswordUser", findPasswordUser);
 
 					return "findPasswordBackNext";
@@ -312,9 +310,9 @@ public class UserAction extends BaseAction<User> {
 
 			if ("OK".equals(result.get("msg"))) {
 			    //改用session原生方式
-                ActionContext.getContext().getSession().put("verificationCode", verificationCode);
-//				session.clear();
-//				session.put("verificationCode", verificationCode);
+                //ActionContext.getContext().getSession().put("verificationCode", verificationCode);
+				session.clear();
+				session.put("verificationCode", verificationCode);
 				writeStringToResponse("【ok】");
 			}
 		} catch (Exception e) {
@@ -339,10 +337,9 @@ public class UserAction extends BaseAction<User> {
 					.fromObject(MessageSend.findpswdDynamicVerification(
 							pswdBackCode, phone));
 			if ("OK".equals(result.get("msg"))) {
-				//session.clear();
-				//session.put("pswdBackCode", pswdBackCode);
+				session.put("pswdBackCode", pswdBackCode);
 
-                ActionContext.getContext().getSession().put("pswdBackCode", pswdBackCode);
+                //ActionContext.getContext().getSession().put("pswdBackCode", pswdBackCode);
 				writeStringToResponse("【ok】");
 			}
 		} catch (Exception e) {
@@ -384,17 +381,7 @@ public String userInfo(){
 	return "userInfo";
 }
 
-/**
- *跳转至订单详情
- */
-public String orderDetail(){
-	return "orderDetail";
-}
 
-/*跳转至绑定盒子
 
- */
-public String bindBox(){
-	return "bindBox";
-}
+
 }

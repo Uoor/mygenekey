@@ -12,6 +12,22 @@
 
 
 <nav class="gtco-nav" >
+    <div class="state-box">
+        <div class="container">
+            <ul class="state-no-login">
+                <li class="state-li">
+                    <button class="small" href="bind.html">绑定</button>
+                </li>
+                <li class="state-li">
+                    <button class="small" href="login.html">登录</button>
+                </li>
+                <li class="state-li">
+                    <button class="small"  href="register.html">注册</button>
+                </li>
+
+            </ul>
+        </div>
+    </div>
     <div class="gtco-container">
         <div class="row">
             <div class="col-xs-2 ">

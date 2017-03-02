@@ -51,10 +51,9 @@ CREATE TABLE `barcode` (
   `bcid` int(11) NOT NULL AUTO_INCREMENT,
   `bar_code` varchar(255) DEFAULT NULL COMMENT '要确定好格式',
   `status` int(11) DEFAULT '0' COMMENT '0 未激活;1 已激活 ',
-  `uid` int(11) DEFAULT NULL,
   PRIMARY KEY (`bcid`),
   KEY `idx_barcode_bar_code` (`bar_code`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -77,7 +76,7 @@ CREATE TABLE `category` (
   `cid` int(11) NOT NULL AUTO_INCREMENT,
   `cname` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`cid`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -104,7 +103,7 @@ CREATE TABLE `categorysecond` (
   PRIMARY KEY (`csid`),
   KEY `FK936FCAF21DB1FD15` (`cid`),
   CONSTRAINT `FK936FCAF21DB1FD15` FOREIGN KEY (`cid`) REFERENCES `category` (`cid`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -160,7 +159,7 @@ CREATE TABLE `orderitem` (
   KEY `FKE8B2AB6140ACF87A` (`oid`),
   CONSTRAINT `FKE8B2AB6140ACF87A` FOREIGN KEY (`oid`) REFERENCES `orders` (`oid`),
   CONSTRAINT `FKE8B2AB6171DB7AE4` FOREIGN KEY (`pid`) REFERENCES `product` (`pid`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -169,7 +168,6 @@ CREATE TABLE `orderitem` (
 
 LOCK TABLES `orderitem` WRITE;
 /*!40000 ALTER TABLE `orderitem` DISABLE KEYS */;
-INSERT INTO `orderitem` VALUES (17,2,1776,1,9004,NULL),(18,1,888,1,9005,NULL);
 /*!40000 ALTER TABLE `orderitem` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -203,9 +201,9 @@ CREATE TABLE `orders` (
   PRIMARY KEY (`oid`),
   KEY `FKC3DF62E5AA3D9C7` (`uid`),
   KEY `FK_logisticscompany_orders` (`lcid`),
-  CONSTRAINT `FKC3DF62E5AA3D9C7` FOREIGN KEY (`uid`) REFERENCES `user` (`uid`),
-  CONSTRAINT `FK_logisticscompany_orders` FOREIGN KEY (`lcid`) REFERENCES `logisticscompany` (`lcid`)
-) ENGINE=InnoDB AUTO_INCREMENT=9006 DEFAULT CHARSET=utf8;
+  CONSTRAINT `FK_logisticscompany_orders` FOREIGN KEY (`lcid`) REFERENCES `logisticscompany` (`lcid`),
+  CONSTRAINT `FKC3DF62E5AA3D9C7` FOREIGN KEY (`uid`) REFERENCES `user` (`uid`)
+) ENGINE=InnoDB AUTO_INCREMENT=9004 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -214,7 +212,6 @@ CREATE TABLE `orders` (
 
 LOCK TABLES `orders` WRITE;
 /*!40000 ALTER TABLE `orders` DISABLE KEYS */;
-INSERT INTO `orders` VALUES (9004,1776,'2017-02-10 13:23:52',1,'姜涛','15726607618','北京市西三旗中腾建华3楼',7,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(9005,888,'2017-02-10 13:24:37',1,NULL,NULL,NULL,7,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `orders` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -238,7 +235,7 @@ CREATE TABLE `product` (
   PRIMARY KEY (`pid`),
   KEY `FKED8DCCEFB9B74E02` (`csid`),
   CONSTRAINT `FKED8DCCEFB9B74E02` FOREIGN KEY (`csid`) REFERENCES `categorysecond` (`csid`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=80 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -247,7 +244,6 @@ CREATE TABLE `product` (
 
 LOCK TABLES `product` WRITE;
 /*!40000 ALTER TABLE `product` DISABLE KEYS */;
-INSERT INTO `product` VALUES (1,'Look',999,888,'','look pdec',0,'0000-00-00 00:00:00',1);
 /*!40000 ALTER TABLE `product` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -265,7 +261,6 @@ CREATE TABLE `salivabox` (
   `birthday` datetime DEFAULT NULL COMMENT '出生日期',
   `dna_accredit` int(11) DEFAULT '0' COMMENT '0 不允许 1允许',
   `uid` int(11) DEFAULT NULL COMMENT '使用的用户',
-  `userName` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`sbid`),
   KEY `FK_user_salivabox` (`uid`),
   CONSTRAINT `FK_user_salivabox` FOREIGN KEY (`uid`) REFERENCES `user` (`uid`)
@@ -298,8 +293,9 @@ CREATE TABLE `user` (
   `addr` varchar(255) DEFAULT NULL,
   `state` int(11) DEFAULT NULL,
   `code` varchar(64) DEFAULT NULL,
+  `bar_code` varchar(50) DEFAULT NULL COMMENT '要确定好格式',
   PRIMARY KEY (`uid`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -308,7 +304,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (7,'aaa','aaa','姜涛','aaa@shop.com','15726607618','北京市西三旗中腾建华3楼',1,NULL),(8,'bbb','bbb','张三','bbb@shop.com','18726607618','北京市西三旗中腾建华3楼',1,''),(9,NULL,'123','13646029214',NULL,'13646029214',NULL,1,NULL);
+INSERT INTO `user` VALUES (7,'aaa','aaa','姜涛','aaa@shop.com','15726607618','北京市西三旗中腾建华3楼',1,NULL,NULL),(8,'bbb','bbb','张三','bbb@shop.com','18726607618','北京市西三旗中腾建华3楼',1,'',NULL);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -321,4 +317,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-02-28 13:38:08
+-- Dump completed on 2017-02-10 12:10:27

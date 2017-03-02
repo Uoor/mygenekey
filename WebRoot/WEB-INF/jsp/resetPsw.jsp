@@ -110,7 +110,7 @@
                     </div>
                     <div class="clearfix"></div>
                     <input type="submit" value="下一步" >
-                    <h6> 未注册用户？<a href="register.html">立即注册</a></h6>
+                    <h6> 未注册用户？<a href="${ pageContext.request.contextPath }/user_registPage.action">立即注册</a></h6>
                 </form>
 
 

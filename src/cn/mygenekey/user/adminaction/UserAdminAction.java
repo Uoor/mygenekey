@@ -1,5 +1,7 @@
 package cn.mygenekey.user.adminaction;
 
+import cn.mygenekey.adminuser.vo.AdminUser;
+import cn.mygenekey.base.BaseAction;
 import cn.mygenekey.user.service.UserService;
 import cn.mygenekey.user.vo.User;
 import cn.mygenekey.utils.PageBean;
@@ -12,7 +14,7 @@ import com.opensymphony.xwork2.ModelDriven;
  *  
  *
  */
-public class UserAdminAction extends ActionSupport implements ModelDriven<User>{
+public class UserAdminAction extends BaseAction<User> {
 	// 模型驱动使用的类
 	private User user = new User();
 

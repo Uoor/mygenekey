@@ -16,6 +16,7 @@ public class BarCode implements Serializable{
 	private Integer bcid;
 	private String barCode;
 	private Integer status;
+	private Integer uid;
 	/*//绑定的盒子id
 	private Integer sbid;
 	//使用用户id
@@ -47,7 +48,11 @@ public class BarCode implements Serializable{
 		this.status = status;
 	}
 
+	public Integer getUid() {
+		return uid;
+	}
 
-
-	
+	public void setUid(Integer uid) {
+		this.uid = uid;
+	}
 }
