@@ -33,6 +33,48 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+		<script>
+		function checkphone() {
+		var phone = document.getElementById("login-mobile").value;
+		var isMobile=/^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+		if(phone == null || phone == ''){
+		document.getElementById("span1").innerHTML="手机号不能为空!";
+		return false;
+		}
+		else if(!isMobile.test(phone)) {
+		document.getElementById("span1").innerHTML="手机号输入不正确!";
+		return false;
+		}
+		checkUsername();
+		if(document.getElementById("span1").innerHTML=="用户名不可用")
+		return false;
+		else
+		return true;
+		}
+        function checkPassw() {
+            var password = document.getElementById("password").value;
+            if(password == null || password == ''){
+                document.getElementById("span2").innerHTML="密码不能为空!";
+                return false;
+            }
+            else return true;
+        }
+        function checkForm(){
+            var ok = false;
+            var phoneOk = false;
+            var passwOk = false;
+
+            if(checkphone()){ phoneOk = true; }  //验证name
+            if(checkPassw()){ passwOk = true; } //验证password
+
+            if(phoneOk==true )
+                if(passwOk==true ){
+                    alert("登录成功 ..");
+                    return true;
+                }
+            return false;  //有误，失败
+        }
+		</script>
 
 	</head>
 	<body >
@@ -41,6 +83,29 @@
 
 	<div >
 		<nav class="gtco-nav" >
+			<div class="state-box">
+				<div class="container">
+					<ul class="state-no-login">
+						<li class="state-li">
+							<a type=" button" href="bind.html">绑定</a>
+						</li>
+						<li class="state-li">
+							<a type="button" href="login.html">检测报告</a>
+						</li>
+						<li class="state-li dropdown">
+
+							<a type=" dropdown-toggle" data-toggle="dropdown"  class="userid" >用户账号<b class="caret"></b></a>
+							<ul class="dropdown-menu userlist clearfix">
+								<li ><a href="userInfo.html">信息中心</a></li>
+								<li ><a href="order.html">订单信息</a></li>
+								<li ><a href="bindbox.html">绑定盒子</a></li>
+								<li ><a href="resetPsw.html">修改密码</a></li>
+								<li ><a href="#">退出</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
 			<div class="gtco-container">
 				<div class="row">
 					<div class="col-xs-2 ">
@@ -64,15 +129,15 @@
 			<div class="container">
 				<div class="login-body" >
 					<h3 class="page-header">登 录</h3>
-					<form action="#" method="post">
+					<form action="#" method="post" onsubmit="return checkForm();">
 						<div class="form-group ">
 							<label  class="formlabel">手机号</label>
-							<input type ="text" class="form-control" name="phone" placeholder="请输入手机号" required="">
+							<input type ="text" class="form-control" name="phone" placeholder="请输入手机号" required="required" onblur="checkphone()">
 						</div>
 						<div class="clearfix"></div>
 						<div class="form-group ">
 							<label  class="formlabel">密码</label>
-							<input type="password"  class="form-control" name="password" placeholder="请设置密码" required ="">
+							<input type="password"  class="form-control" name="password" placeholder="请设置密码" required ="required" onblur="checkPassw()">
 						</div>
 						<div class="clearfix"></div>
 						<div class="container">
