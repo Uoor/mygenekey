@@ -58,7 +58,8 @@
 
 		<!-- 配置绑定盒子Action -->
 		<action name="saliva_*" class="salivaBoxAction" method="{1}">
-			<result name="bindBox">/WEB-INF/jsp/bindBox.jsp</result>
+			<result name="bindBoxPage">/WEB-INF/jsp/bindBox.jsp</result>
+			<result name="doBindPage">/WEB-INF/jsp/doBindPage.jsp</result>
 
 			<interceptor-ref name="checkPrivilegeInterceptor"/>
 			<interceptor-ref name="defaultStack"/>

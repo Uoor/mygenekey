@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>基因钥匙| 绑定</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet"> -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Themify Icons-->
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Flexslider -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bind.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+		<script>
+			window.onload=function()
+			{
+				var oT=document.getElementById('boxCode');
+				oT.onkeydown=function(ev)
+				{
+					var oW=oT.value;
+					var oEvent=ev||event;
+					if(oEvent.keyCode==8)
+					{
+						if(oW)
+						{
+							for(var i=0;i<oW.length;i++)
+							{
+								var newStr=oW.replace(/\s$/g,'');
+							}
+							oT.value=newStr
+						}
+					}else{
+						for(var i=0;i<oW.length;i++)
+						{
+							var arr=oW.split('');
+
+							if( (i+1)% 5 ==0)
+							{
+								arr.splice(i,0,'-');
+							}
+						}
+						oT.value=arr.join('');
+					}
+				}
+			}
+		</script>
+	</head>
+	<body >
+		
+	<div class="gtco-loader"></div>
+
+	<div >
+		<nav class="gtco-nav" >
+			<div class="state-box">
+				<div class="container">
+					<ul class="state-no-login">
+						<li class="state-li">
+							<a type=" button" href="bind.html">绑定</a>
+						</li>
+						<li class="state-li">
+							<a type="button" href="login.html">检测报告</a>
+						</li>
+						<li class="state-li dropdown">
+
+							<a type=" dropdown-toggle" data-toggle="dropdown"  class="userid" >用户账号<b class="caret"></b></a>
+							<ul class="dropdown-menu userlist clearfix">
+								<li ><a href="userInfo.html">信息中心</a></li>
+								<li ><a href="order.html">订单信息</a></li>
+								<li ><a href="bindbox.html">绑定盒子</a></li>
+								<li ><a href="resetPsw.html">修改密码</a></li>
+								<li ><a href="#">退出</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="gtco-container">
+				<div class="row">
+					<div class="col-xs-2 ">
+						<div id="gtco-logo"><a href="index.html">基因钥匙</a></div>
+					</div>
+					<div class="col-xs-10 text-right menu-1 main-nav">
+						<ul>
+							<li ><a href="#">关于我们</a></li>
+							<li><a href="#" >商城</a></li>
+							<li><a href="#" >示例报告</a></li>
+							<li><a href="#">检测流程</a></li>
+							<li><a href="#" >商务合作</a></li>
+							<li><a href="#" >爱心公益</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+		<div class="bind-page">
+			<div class="container">
+				<div class="bind-body" >
+					<h3 class="page-header bind-head" >绑  定</h3>
+					<form action="#" method="post">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+						<div class="form-group ">
+							<label  class="formlabel">受检人姓名</label>
+							<input type ="text" class="form-control" name="phone" placeholder="请输入姓名" required="required">
+						</div>
+						<div class="clearfix"></div>
+						<div class="form-group ">
+							<label  class="radio formlabel">受检人性别</label>
+						<label class="sex " data-icon="fa-mars"><input type="radio" class="hidden" name="sex" value="1" /><i></i>男士</label>
+							<label class="sex"><input type="radio" class="hidden" name="sex" value="0"/><i></i>女士</label>
+						</div>
+						<div class="clearfix"></div>
+									<div class="form-group">
+										<label class="formlabel">出生日期</label>
+										<div class="selClass">
+										<select id="year" >
+											<option>请选择年份</option>
+										</select>
+										<select id="month">
+											<option>请选择月份</option>
+										</select>
+										<select id="day" >
+											<option>请选择日</option>
+										</select>
+											</div >
+									</div>
+									<div class="clearfix"></div>
+						<div class="form-group ">
+							<label  class="formlabel">盒子编号</label>
+							<input type ="text" id="boxCode" class="form-control" name="boxCode" maxlength="19" pattern="\d{4}-\d{4}-\d{4}-\d{4}" placeholder="格式：xxxx-xxxx-xxxx-xxxx" required="">
+						</div>
+
+									<div class="clearfix"></div>
+									<input type="submit" value="保 存">
+									</div>
+								<div class="col-md-6">
+									<img class="boxPicture img-responsive center-block img-rounded" src="images/img_4.jpg" />
+									<p>编号位置如图</p>
+								</div>
+
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	<div class="fh5co-footer"  >
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<h3 class="section-title">关于我们</h3>
+					<ul class="contact-info">
+						<li><a href="#">公司概况</a></li>
+						<li><a href="#">技术优势</a></li>
+						<li><a href="#">顾问团队</a></li>
+
+					</ul>
+				</div>
+
+				<div class="col-md-3 ">
+					<h3 class="section-title">基因科普</h3>
+					<ul class="contact-info" >
+						<li><a href="#">基因知识宣传</a></li>
+						<li><a href="#">媒体宣传</a></li>
+						<li><a href="#">科技动态</a></li>
+
+					</ul>
+				</div>
+				<div class="col-md-3 ">
+					<h3 class="section-title">客户服务</h3>
+					<ul class="contact-info">
+						<li><a href="#">联系客服</a></li>
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">隐私声明</a></li>
+						<li><a href="#">服务协议</a></li>
+						<li><a href="#">商务合作</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-3 to-animate">
+					<h3 class="section-title">关注我们</h3>
+					<ul class="contact-info" >
+						<li>微信公众号:
+							<span>weixinhao123</span></li>
+						<li><img class="erweima" src="images/img_2.jpg"/></li>
+						<li>电话:
+							<span>12345667891</span></li>
+						<li>邮箱:
+							<span>mygenkey@mygenkey.com</span></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+	</div>
+	</body>
+</html>
+<script type="text/javascript">
+
+	var y=document.getElementById("year"),
+			m=document.getElementById("month"),
+			d=document.getElementById("day");
+
+	//年
+	var year=new Date().getFullYear();
+	for(var i=year;i>=1900;i--){
+		y.options[year+1-i]=new Option(i,i);    //第一个参数是option的文本值，第二个参数是option的value值
+	}
+
+	//月
+	for(var i=1;i<=12;i++){
+		m.options[i]=new Option(i,i);
+	}
+
+	//日
+	var day = function(){
+		d.length=1;        //初始化
+		var y_value=y.value,
+				m_value=m.value;
+		if(y_value==""||m_value==""){
+			return;
+		}
+		else{
+			var arr=[31,28,31,30,31,30,31,31,30,31,30,31];
+			if((y_value%4==0&&y_value%100!=0)||y_value%400==0){
+				arr[1]++;
+			}
+			for(i=1;i<=arr[m_value-1];i++){
+				d.options[i]=new Option(i,i);
+			}
+		}
+	}
+
+	y.onchange = function(){
+		day();
+	}
+	m.onchange = function(){
+		day();
+	}
+
+</script>

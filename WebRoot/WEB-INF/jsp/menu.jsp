@@ -8,7 +8,7 @@
                     <div class="container">
                         <ul class="state-no-login">
                             <li class="state-li">
-                                <a type=" button" href="bind.html">绑定</a>
+                                <a type=" button" href="html/bind.html">绑定</a>
                             </li>
                             <li class="state-li">
                                 <a type=" button" href="${ pageContext.request.contextPath }/user_loginPage.action">登录</a>
@@ -27,7 +27,7 @@
                     <div class="container">
                         <ul class="state-no-login">
                             <li class="state-li">
-                                <a type=" button" href="bind.html">绑定</a>
+                                <a type=" button" href="html/bind.html">绑定</a>
                             </li>
                             <li class="state-li">
                                 <a type="button" href="login.html">检测报告</a>

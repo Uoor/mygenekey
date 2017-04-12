@@ -72,7 +72,11 @@
                                     绑定盒子</a></li>
                             </ul>
                         </div>
+
                         <div class="col-md-10">
+
+                                <a href="${ pageContext.request.contextPath }/saliva_doBindPage.action">（左边展示）添加绑定盒子</a>
+
                         </div>
                     </div>
                 </div>

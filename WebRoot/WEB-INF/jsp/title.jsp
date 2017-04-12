@@ -68,7 +68,7 @@
     <div class="gtco-container">
         <div class="row">
             <div class="col-xs-2 ">
-                <div id="gtco-logo"><a href="index.html">基因钥匙</a></div>
+                <div id="gtco-logo"><a href="index.action">基因钥匙</a></div>
             </div>
             <div class="col-xs-10 text-right menu-1 main-nav">
                 <ul>
