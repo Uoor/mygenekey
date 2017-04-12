@@ -915,7 +915,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #428bca;
+  color: #ff5126;
   text-decoration: none;
 }
 a:hover,
@@ -4974,8 +4974,8 @@ a.list-group-item:focus {
 .list-group-item.active:focus {
   z-index: 2;
   color: #fff;
-  background-color: #428bca;
-  border-color: #428bca;
+  background-color: #ff5126;
+  border-color: #ff5126;
 }
 .list-group-item.active .list-group-item-heading,
 .list-group-item.active:hover .list-group-item-heading,

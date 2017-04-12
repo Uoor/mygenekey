@@ -68,7 +68,7 @@
 				<form action="${ pageContext.request.contextPath }/user_login.action"  method="post" novalidate="novalidate" onsubmit="return checkForm();" >
 					<div class="form-group ">
 						<label  class="formlabel">手机号</label>
-						<input type ="text" class="form-control" id="username" name="username" placeholder="请输入手机号" required="required">
+						<input type ="text" class="form-control" id="login-mobile" name="username" placeholder="请输入手机号" required="required">
 					</div>
 					<div class="clearfix"></div>
 					<div class="form-group ">

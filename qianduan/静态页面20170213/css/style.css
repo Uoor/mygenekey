@@ -150,9 +150,12 @@ h1, h2, h3, h4, h5, h6, figure {
 .gtco-nav ul li a:hover, .gtco-nav ul li a:focus, .gtco-nav ul li a:active {
   color: #FF5126;
 }
+.gtco-nav .state-box{
+  background: #efefef;
+  height:32px;
+}
 .gtco-nav .state-no-login{
   float: right;
-background: #ededed;
 }
 .gtco-nav .state-no-login li{
   margin:0 0px;
@@ -162,7 +165,7 @@ background: #ededed;
   border:none;
   cursor: pointer;
   color: #000;
-  background: #ededed;
+  background: #efefef;
   font-size: 16px;
   -webkit-transition:.5s all;
   -moz-transition:.5s all;
@@ -182,16 +185,12 @@ background: #ededed;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.gtco-nav ul{
-
-}
 .gtco-nav .userlist{
   overflow: hidden;
   text-align: center;
   background-color: #fff;
   -webkit-transition: height, padding 0.3s;
-  float: right;
-  width:90px;
+  width:84px;
 }
 .gtco-nav .userlist:hover .gtco-nav .userlist{
   height: auto;
@@ -211,6 +210,7 @@ background: #ededed;
   height: 32px;
   text-align: center;
   font-size: 16px;
+  padding:5px;
   -webkit-transition:.5s all;
   -moz-transition:.5s all;
   -o-transition:.5s all;
@@ -218,6 +218,7 @@ background: #ededed;
   transition:.5s all;
   padding: 0px;
   display: block;
+  background: #ffffFF;
 }
 .gtco-nav .userlist li a:hover{
 
@@ -2062,7 +2063,7 @@ form label {
   -ms-box-shadow:0px 0px 4px 1px rgb(189, 189, 189);
   box-shadow:0px 0px 4px 1px rgb(189, 189, 189);
   width: 50%;
-  margin: 100px auto;
+  margin: 130px auto;
 }
 .login-page h3{
   margin-top:10px;
