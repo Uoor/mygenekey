@@ -22,25 +22,28 @@ public class CheckPrivilegeInterceptor extends MethodFilterInterceptor {
 		String actionName = actionInvocation.getProxy().getActionName();
 		String privUrl = namespace + "|" +actionName; // 对应的权限URL
 
-		System.out.println("privUrl" + " -->" + privUrl );
+		System.out.println("前台privUrl" + " -->" + privUrl );
 
 		if(user != null){
 			// 已经登录过
 			return actionInvocation.invoke();
 		}else{
-			if (actionName.startsWith("toLogin") || actionName.startsWith("login")
-					||actionName.startsWith("sendVerification") || actionName.startsWith("user_regist")
+			if (actionName.startsWith("toLogin")
+					|| actionName.startsWith("login")
+					||actionName.startsWith("sendVerification")
+					|| actionName.startsWith("user_regist")
 					|| actionName.startsWith("user_regist")
 					|| actionName.startsWith("user_input")
 					|| actionName.startsWith("user_find")
 					|| actionName.startsWith("user_login")
-					|| actionName.startsWith("user_forgetPsw")) {
+					|| actionName.startsWith("user_forgetPsw"))
+			{
 				// 如果是去登录，就放行
 				return actionInvocation.invoke();
 			}
 			// 跳转到登录页面:
 			ActionSupport support = (ActionSupport) actionInvocation.getAction();
-			support.addActionError("您还没有登录!没有权限访问!");
+			support.addActionError("您还没有登录!没有权限访问!跳转到：" + ActionSupport.LOGIN);
 			return ActionSupport.LOGIN;
 		}
 				
