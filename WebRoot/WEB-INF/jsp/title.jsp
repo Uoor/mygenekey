@@ -16,9 +16,11 @@
                     <div class="state-box">
                         <div class="container">
                             <ul class="state-no-login">
+                                <!--新版的23 没有绑定
                                 <li class="state-li">
                                     <a type=" button" href="${ pageContext.request.contextPath }/saliva_bindBox.action">绑定</a>
                                 </li>
+                                -->
                                 <li class="state-li">
                                     <a type=" button" href="${ pageContext.request.contextPath }/user_loginPage.action">登录</a>
                                 </li>
@@ -39,12 +41,13 @@
                                 <li class="state-li">
                                     <a type="button" href="login.html">检测报告</a>
                                 </li>
+                                <li><a type="button" href="${ pageContext.request.contextPath }/cart_myCart.action">购物车</a></li>
                                 <li class="state-li dropdown">
                                     <a type=" dropdown-toggle" data-toggle="dropdown"  class="userid" >
                                         <s:property value="#session.existUser.name"/><b class="caret"></b>
                                     </a>
                                     <ul class="dropdown-menu userlist ">
-                                        <li><a href="${ pageContext.request.contextPath }/cart_myCart.action">购物车</a></li>
+
                                         <li ><a href="${ pageContext.request.contextPath }/user_userInfo.action">个人中心</a></li>
                                         <li ><a href="${ pageContext.request.contextPath }/order_findByUid.action?page=1">我的订单</a></li>
                                         <li ><a type=" button" href="${ pageContext.request.contextPath }/saliva_bindBox.action">绑定盒子</a></li>

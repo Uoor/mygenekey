@@ -27,7 +27,7 @@
 </div>	
 </div>
 	
-	<%@ include file="menu.jsp" %>
+	<%@ include file="../menu.jsp" %>
 
 </div>	
 
