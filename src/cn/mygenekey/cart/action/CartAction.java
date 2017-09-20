@@ -13,10 +13,12 @@ import com.opensymphony.xwork2.ActionSupport;
 /**
  * 购物车Action
  * 
- *  
+ *  不用继承BaseAction，没有存储在数据库，只是做内存存储
+ *
+ *  http://localhost:8080/mygenekey/product_findByPid.action?pid=1
  * 
  */
-public class CartAction extends BaseAction<CartAction> {
+public class CartAction extends ActionSupport {
 	// 接收pid
 	private Integer pid;
 	// 接收数量count

@@ -64,7 +64,7 @@
                                 <li><a  class="list-group-item active" href="${pageContext.request.contextPath}/user_userInfo.action">
                                     <i class="glyphicon glyphicon-user"></i>
                                     个人账户</a></li>
-                                <li><a class="list-group-item" href="${pageContext.request.contextPath}/order_orderDetail.action">
+                                <li><a class="list-group-item" href="${pageContext.request.contextPath}/order_findByUid.action?page=1">
                                     <i class="glyphicon glyphicon-list-alt"></i>
                                     订单详情</a></li>
                                 <li><a class="list-group-item" href="${pageContext.request.contextPath}/saliva_bindBox.action">
