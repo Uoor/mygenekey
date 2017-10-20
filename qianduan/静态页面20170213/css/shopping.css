@@ -1,0 +1,39 @@
+.pricing-section{
+    text-align:center;
+}
+.price-body{
+    padding: 3em;
+    background-color: #fff;
+    -webkit-box-shadow:0px 0px 4px 1px rgb(189, 189, 189);
+    -moz-box-shadow:0px 0px 4px 1px rgb(189, 189, 189);
+    -o-box-shadow:0px 0px 4px 1px rgb(189, 189, 189);
+    -ms-box-shadow:0px 0px 4px 1px rgb(189, 189, 189);
+    box-shadow:0px 0px 4px 1px rgb(189, 189, 189);
+    width: 90%;
+    margin: 130px auto;
+}
+.pricing-section .container{
+    width:100%;
+}
+.pricing-section h3{
+    margin-top:10px;
+}
+.pricing-section h4{
+    font-size: 24px;
+    color: coral;
+}
+.pricing-section ul{
+    list-style:none;
+}
+.bind-head{
+    text-align: left;
+    margin-left:80px;
+}
+.glyphicon glyphicon-ok{
+    font-size:12px;
+    color: green;
+}
+.glyphicon glyphicon-remove{
+    font-size:12px;
+    color: red;
+}
