@@ -149,6 +149,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .gtco-nav ul li a:hover, .gtco-nav ul li a:focus, .gtco-nav ul li a:active {
   color: #FF5126;
+  cursor: pointer;
 }
 .gtco-nav .state-box{
   background: #efefef;
