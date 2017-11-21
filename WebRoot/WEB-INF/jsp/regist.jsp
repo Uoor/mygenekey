@@ -155,7 +155,7 @@
                 }
             }
             // 3.打开连接
-            xhr.open("GET","${pageContext.request.contextPath}/user_findByName.action?time="+new Date().getTime()+"&username="+username,true);
+            xhr.open("GET","${pageContext.request.contextPath}/user_findByName.action?time="+new Date().getTime()+"&phone="+username,true);
             // 4.发送
             xhr.send(null);
         }

@@ -25,6 +25,16 @@ public class UserDao extends HibernateDaoSupport {
 		return null;
 	}
 
+
+	public User findByPhone(String phone) {
+		String hql = "from User where phone = ?";
+		List<User> list = this.getHibernateTemplate().find(hql, phone);
+		if (list != null && list.size() > 0) {
+			return list.get(0);
+		}
+		return null;
+	}
+
 	// 注册用户存入数据库代码实现
 	public void save(User user) {
 		this.getHibernateTemplate().save(user);

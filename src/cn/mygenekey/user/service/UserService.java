@@ -28,6 +28,11 @@ public class UserService {
 		return userDao.findByUsername(username);
 	}
 
+	// 按用户名查询用户的方法:
+	public User findByPhone(String phone){
+		return userDao.findByPhone(phone);
+	}
+
 	// 业务层完成用户注册代码:
 	public void save(User user) {
 		// 将数据存入到数据库

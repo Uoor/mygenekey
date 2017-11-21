@@ -51,7 +51,7 @@
                                         <li ><a href="${ pageContext.request.contextPath }/user_userInfo.action">个人中心</a></li>
                                         <li ><a href="${ pageContext.request.contextPath }/order_findByUid.action?page=1">我的订单</a></li>
                                         <li ><a type=" button" href="${ pageContext.request.contextPath }/saliva_bindBox.action">绑定盒子</a></li>
-                                        <li ><a href="${ pageContext.request.contextPath }/user_resetPsw.action">修改密码</a></li>
+                                        <li ><a href="${ pageContext.request.contextPath }/user_forgetPsw.action">修改密码</a></li>
                                         <a href="${ pageContext.request.contextPath }/user_quit.action">退出</a>|
                                     </ul>
                                 </li>

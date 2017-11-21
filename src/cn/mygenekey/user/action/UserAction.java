@@ -64,7 +64,7 @@ public class UserAction extends BaseAction<User> {
 	 */
 	public String findByName() throws IOException {
 		// 调用Service进行查询:
-		User existUser = userService.findByUsername(user.getUsername());
+		User existUser = userService.findByPhone(user.getPhone());
 		// 获得response对象,项页面输出:
 		HttpServletResponse response = ServletActionContext.getResponse();
 		response.setContentType("text/html;charset=UTF-8");
@@ -265,7 +265,7 @@ public class UserAction extends BaseAction<User> {
 		if (ValidateUtils.checkMobileNumber(phone)
 				&& ValidateUtils.checkVerificationCode(dynamic)) {
 
-			System.out.println("pswdBackCode->" + pswdBackCode);
+			System.out.println("findPasswordBack | pswdBackCode->" + pswdBackCode);
 			if (pswdBackCode != null) {
 				// 进行短信验证码比较
 				if (pswdBackCode.equals(dynamic)) {
@@ -331,7 +331,7 @@ public class UserAction extends BaseAction<User> {
 		String phone = getParameter("phone");
 		// 1.生成验证码,6位数值
 		String pswdBackCode = MessageSend.getVerificationCode();
-		System.out.println("pswdBackCode:" + pswdBackCode);
+		System.out.println("findPswdBack | pswdBackCode:" + pswdBackCode);
 		try {
 			JSONObject result = JSONObject
 					.fromObject(MessageSend.findpswdDynamicVerification(

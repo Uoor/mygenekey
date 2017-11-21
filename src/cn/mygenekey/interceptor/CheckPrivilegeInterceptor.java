@@ -30,12 +30,14 @@ public class CheckPrivilegeInterceptor extends MethodFilterInterceptor {
 		}else{
 			if (actionName.startsWith("toLogin")
 					|| actionName.startsWith("login")
-					||actionName.startsWith("sendVerification")
+					|| actionName.startsWith("user_sendVerification")
+					|| actionName.startsWith("sendVerification")
 					|| actionName.startsWith("user_regist")
 					|| actionName.startsWith("user_regist")
 					|| actionName.startsWith("user_input")
 					|| actionName.startsWith("user_find")
 					|| actionName.startsWith("user_login")
+					|| actionName.startsWith("user_mobileRegister")
 					|| actionName.startsWith("user_forgetPsw"))
 			{
 				// 如果是去登录，就放行
